@@ -9,9 +9,11 @@ type LinkProps = {
 
 function HomescreenLink({ text, link }: LinkProps): JSX.Element {
   return (
-    <Link className={styles.homescreenLink} to={link}>
-      <span>{text}</span>
-    </Link>
+    <div className={styles.container}>
+      <Link className={styles.homescreenLink} to={link}>
+        {text}
+      </Link>
+    </div>
   );
 }
 

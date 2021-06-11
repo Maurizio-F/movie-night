@@ -1,3 +1,10 @@
 .homescreenLink {
-  text-decoration: none;
+  font-family: var(--font-family);
+  color: var(--text-color);
+  display: block;
+  padding: 0.5em 0.9em;
+  width: 9em;
+  text-align: center;
+  border: 0.06em solid var(--tertiary-color);
+  border-radius: 0.325em;
 }
