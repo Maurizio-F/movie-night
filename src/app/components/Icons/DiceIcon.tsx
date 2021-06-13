@@ -18,7 +18,7 @@ function DiceIcon(): JSX.Element {
           data-name="Pfad 36"
           d="M37.576,27.425,49.5,28.745a8,8,0,0,1,7.072,8.831L55.255,49.5a8,8,0,0,1-8.831,7.072L34.5,55.255a8,8,0,0,1-7.072-8.831L28.745,34.5"
           fill="none"
-          stroke="#e63946"
+          stroke="currentColor"
           stroke-linejoin="round"
           stroke-width="1"
         />
@@ -34,7 +34,7 @@ function DiceIcon(): JSX.Element {
           rx="8"
           transform="translate(6.09 10.215) rotate(-8.472)"
           fill="none"
-          stroke="#e63946"
+          stroke="currentColor"
           stroke-linejoin="round"
           stroke-width="1"
         />
@@ -45,7 +45,7 @@ function DiceIcon(): JSX.Element {
           r="3.354"
           transform="translate(18.646 18.646)"
           fill="rgba(255,255,255,0)"
-          stroke="#e63946"
+          stroke="currentColor"
           stroke-linejoin="round"
           stroke-width="1"
         />
@@ -56,7 +56,7 @@ function DiceIcon(): JSX.Element {
           r="3.354"
           transform="translate(35.032 34.133)"
           fill="rgba(255,255,255,0)"
-          stroke="#e63946"
+          stroke="currentColor"
           stroke-linejoin="round"
           stroke-width="1"
         />
@@ -67,7 +67,7 @@ function DiceIcon(): JSX.Element {
           r="3.354"
           transform="translate(42.26 43.159)"
           fill="rgba(255,255,255,0)"
-          stroke="#e63946"
+          stroke="currentColor"
           stroke-linejoin="round"
           stroke-width="1"
         />
