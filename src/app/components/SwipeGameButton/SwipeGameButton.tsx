@@ -8,11 +8,10 @@ function SwipeGameButton(): JSX.Element {
       <button>
         <AcceptIcon />
       </button>
-      ;
+
       <button>
         <DeclineIcon />
       </button>
-      ;
     </div>
   );
 }
