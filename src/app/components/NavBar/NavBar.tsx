@@ -2,14 +2,16 @@ import React from "react";
 import SofaIcon from "../Icons/SofaIcon";
 import LogoIcon from "../Icons/LogoIcon";
 import DiceIcon from "../Icons/DiceIcon";
+import NavBarLink from "../NavBarLink/NavBarLink";
+
 import styles from "./NavBar.module.css";
 
 function NavBar(): JSX.Element {
   return (
     <div className={styles.navBar}>
-      <SofaIcon />
-      <LogoIcon />
-      <DiceIcon />
+      <NavBarLink icon={<SofaIcon />} link="#" />
+      <NavBarLink icon={<LogoIcon />} link="#" />
+      <NavBarLink icon={<DiceIcon />} link="#" />
     </div>
   );
 }
