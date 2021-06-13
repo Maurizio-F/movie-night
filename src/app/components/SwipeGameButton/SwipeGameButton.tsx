@@ -1,16 +1,17 @@
 import React from "react";
 import AcceptIcon from "../Icons/AcceptIcon";
 import DeclineIcon from "../Icons/DeclineIcon";
+import styles from "./SwipeGameButton.module.css";
 
 function SwipeGameButton(): JSX.Element {
   return (
-    <div>
-      <button>
-        <AcceptIcon />
+    <div className={styles.swipeGameElement}>
+      <button className={styles.acceptButton}>
+        <DeclineIcon />
       </button>
 
-      <button>
-        <DeclineIcon />
+      <button className={styles.declineButton}>
+        <AcceptIcon />
       </button>
     </div>
   );

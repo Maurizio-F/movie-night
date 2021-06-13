@@ -1,0 +1,19 @@
+.swipeGameElement {
+  display: flex;
+  justify-content: space-between;
+  width: 13em;
+}
+
+.acceptButton {
+  background: transparent;
+  border-radius: 100%;
+  padding: 1.3em;
+  border: 0.06em solid var(--secondary-color);
+}
+
+.declineButton {
+  background: transparent;
+  border-radius: 100%;
+  padding: 1.3em;
+  border: 0.06em solid var(--secondary-color);
+}
