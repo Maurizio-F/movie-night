@@ -3,7 +3,7 @@
   color: var(--secondary-text-color);
   display: grid;
   grid-template-columns: 10em 1fr;
-  border-top-left-radius: 10px;
+  border-top-left-radius: 0.625em;
   border-bottom-left-radius: 10px;
   align-items: center;
   justify-items: self-end;

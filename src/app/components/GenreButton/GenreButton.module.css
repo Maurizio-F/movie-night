@@ -1,6 +1,6 @@
 .genreButton {
   font-family: var(--font-family);
-  background-color: var(--background-color);
+  background-color: var(--secondary-bg-color);
   color: var(--tertiary-color);
   border: 0.06em solid var(--secondary-color);
   border-radius: 1.875em;

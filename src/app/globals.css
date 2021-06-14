@@ -15,7 +15,8 @@
   --text-color: #1d3557;
   --secondary-text-color: #fff;
   --contrast-text-color: #000;
-  --background-color: #fff;
+  --primary-bg-color: #1d3557;
+  --secondary-bg-color: #fff;
 }
 
 body {
