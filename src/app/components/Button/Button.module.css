@@ -1,0 +1,8 @@
+.button {
+  font-family: var(--font-family);
+  background-color: var(--tertiary-color);
+  color: var(--contrast-text-color);
+  border: 0.06em solid var(--secondary-color);
+  border-radius: 0.325em;
+  padding: 0.5em 0.9em;
+}
