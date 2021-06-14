@@ -1,0 +1,8 @@
+.navBarLink {
+  color: var(--tertiary-color);
+}
+
+.navBarLink:active,
+.navBarLink:hover {
+  color: var(--secondary-color);
+}
