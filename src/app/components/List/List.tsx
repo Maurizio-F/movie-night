@@ -1,8 +1,5 @@
 import React from "react";
 
-import DeleteIcon from "../Icons/DeleteIcon";
-import ShareIcon from "../Icons/ShareIcon";
-
 type ListProps = {
   headline: string;
   date: string;
