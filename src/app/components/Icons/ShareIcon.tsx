@@ -4,8 +4,8 @@ function ShareIcon(): JSX.Element {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="36.627"
-      height="30.783"
+      width="25"
+      height="25"
       viewBox="0 0 36.627 30.783"
     >
       <path

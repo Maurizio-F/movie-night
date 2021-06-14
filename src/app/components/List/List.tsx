@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./List.module.css";
 
 type ListProps = {
   headline: string;
@@ -14,11 +15,15 @@ function List({
   deleteButton,
 }: ListProps): JSX.Element {
   return (
-    <div>
-      <p>{headline}</p>
-      <p>{date}</p>
-      <button>{shareButton}</button>
-      <button>{deleteButton}</button>
+    <div className={styles.listElement}>
+      <div className={styles.textElement}>
+        <p>{headline}</p>
+        <p>{date}</p>
+      </div>
+      <div className={styles.iconElement}>
+        <button className={styles.icons}>{shareButton}</button>
+        <button className={styles.icons}>{deleteButton}</button>
+      </div>
     </div>
   );
 }

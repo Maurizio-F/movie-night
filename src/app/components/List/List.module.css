@@ -1,0 +1,26 @@
+.listElement {
+  background-color: var(--primary-color);
+  color: var(--secondary-text-color);
+  display: grid;
+  grid-template-columns: 10em 1fr;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  align-items: center;
+  justify-items: self-end;
+  margin-left: 2em;
+  margin-bottom: 1em;
+}
+
+.textElement {
+  padding-right: 2em;
+}
+
+.iconElement {
+  padding-right: 0.5em;
+  padding-top: 3em;
+}
+
+.icons {
+  background: transparent;
+  border: none;
+}
