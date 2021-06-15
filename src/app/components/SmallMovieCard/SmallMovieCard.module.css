@@ -1,0 +1,29 @@
+.movieCard {
+  display: grid;
+  width: 22em;
+  grid-template-columns: 8em 1fr;
+  border-radius: 0.625em;
+  padding: 1em 1em 1em;
+  box-shadow: 2px -2px 39px 2px rgba(0, 0, 0, 0.31);
+}
+
+.movieCard__image {
+  height: 9em;
+  border-radius: 0.625em;
+}
+
+.movieCard__headline {
+  font-size: 2em;
+  margin: 0;
+  padding-bottom: 0.3em;
+}
+
+.movieCard__genres {
+  display: block;
+  font-size: 1.2em;
+}
+
+.movieCard__runtime {
+  display: block;
+  font-size: 1.2em;
+}

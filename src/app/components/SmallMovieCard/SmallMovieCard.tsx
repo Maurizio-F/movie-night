@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./SmallMovieCard.module.css";
 
 type CardProps = {
   imgSrc: string;
@@ -14,11 +15,13 @@ function SmallMovieCard({
   runtime,
 }: CardProps): JSX.Element {
   return (
-    <div>
-      <img src={imgSrc} />
-      <h2>{movieName}</h2>
-      <span>{genres}</span>
-      <span>{runtime}</span>
+    <div className={styles.movieCard}>
+      <img className={styles.movieCard__image} src={imgSrc} />
+      <div>
+        <h2 className={styles.movieCard__headline}>{movieName}</h2>
+        <span className={styles.movieCard__genres}>{genres}</span>
+        <span className={styles.movieCard__runtime}>{runtime} min</span>
+      </div>
     </div>
   );
 }

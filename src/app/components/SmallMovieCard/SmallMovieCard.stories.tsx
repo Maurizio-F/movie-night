@@ -11,7 +11,7 @@ export const Cruella = (): JSX.Element => {
     <SmallMovieCard
       imgSrc="./cruella.jpeg"
       movieName="Cruella"
-      genres={["Action", "Drama"]}
+      genres={["Action, ", "Drama"]}
       runtime={120}
     />
   );
@@ -33,7 +33,7 @@ export const JusticeLeague = (): JSX.Element => {
     <SmallMovieCard
       imgSrc="./justiceLeague.jpeg"
       movieName="Justice League"
-      genres={["Action", "Drama"]}
+      genres={["Action, ", "Drama"]}
       runtime={150}
     />
   );
