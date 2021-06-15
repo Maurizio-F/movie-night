@@ -6,7 +6,16 @@ type TrailerProps = {
 };
 
 function Trailer({ videoSrc }: TrailerProps): JSX.Element {
-  return <ReactPlayer url={videoSrc} />;
+  return (
+    <div className="player-wrapper">
+      <ReactPlayer
+        url={videoSrc}
+        className="react-player"
+        width="100%"
+        height="12em"
+      />
+    </div>
+  );
 }
 
 export default Trailer;
