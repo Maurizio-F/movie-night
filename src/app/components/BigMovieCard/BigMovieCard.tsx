@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./BigMovieCard.module.css";
 
 type CardProps = {
   imgSrc: string;
@@ -7,7 +8,7 @@ type CardProps = {
 
 function BigMovieCard({ imgSrc, movieName }: CardProps): JSX.Element {
   return (
-    <div>
+    <div className={styles.movieCard}>
       <img src={imgSrc} alt="Movie Poster" />
       <h1>{movieName}</h1>
     </div>
