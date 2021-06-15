@@ -1,6 +1,6 @@
 .movieCard {
   display: grid;
-  width: 22em;
+  width: 25em;
   grid-template-columns: 8em 1fr;
   border-radius: 0.625em;
   padding: 1em 1em 1em;
