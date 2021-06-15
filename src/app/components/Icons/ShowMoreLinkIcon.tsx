@@ -13,7 +13,7 @@ function MoreButtonIcon(): JSX.Element {
           d="M34.8,0,17.4,17.4,0,0"
           transform="translate(46.297 17.399) rotate(180)"
           fill="none"
-          stroke="#e63946"
+          stroke="var(--tertiary-color)"
           stroke-linecap="round"
           stroke-linejoin="round"
           stroke-miterlimit="10"
@@ -21,7 +21,7 @@ function MoreButtonIcon(): JSX.Element {
         />
         <text
           transform="translate(0 24.399)"
-          fill="#e63946"
+          fill="var(--tertiary-color)"
           font-size="22"
           font-family="Roboto-Regular, Roboto"
           letter-spacing="0.1em"
