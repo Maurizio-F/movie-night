@@ -1,4 +1,5 @@
 import React from "react";
+import ShowMoreLink from "../ShowMoreLink/ShowMoreLink";
 import styles from "./BigMovieCard.module.css";
 
 type CardProps = {
@@ -9,8 +10,15 @@ type CardProps = {
 function BigMovieCard({ imgSrc, movieName }: CardProps): JSX.Element {
   return (
     <div className={styles.movieCard}>
-      <img src={imgSrc} alt="Movie Poster" />
-      <h1>{movieName}</h1>
+      <div className={styles.movieCard__container}>
+        <img
+          className={styles.movieCard__image}
+          src={imgSrc}
+          alt="Movie Poster"
+        />
+      </div>
+      <h1 className={styles.movieCard__headline}>{movieName}</h1>
+      <ShowMoreLink link="#" />
     </div>
   );
 }

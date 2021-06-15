@@ -7,5 +7,13 @@ export default {
 };
 
 export const Cruella = (): JSX.Element => (
-  <BigMovieCard imgSrc="/" movieName="Cruella" />
+  <BigMovieCard imgSrc="./cruella.jpeg" movieName="Cruella" />
+);
+
+export const MortalCombat = (): JSX.Element => (
+  <BigMovieCard imgSrc="./cruella.jpeg" movieName="Cruella" />
+);
+
+export const JusticeLeague = (): JSX.Element => (
+  <BigMovieCard imgSrc="./cruella.jpeg" movieName="Cruella" />
 );

@@ -4,15 +4,14 @@ function MoreButtonIcon(): JSX.Element {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="82"
+      width="60"
       height="54.399"
-      viewBox="0 0 82 54.399"
+      viewBox="0 0 60 54.399"
     >
       <g data-name="Mehr Button" transform="translate(0 1)">
         <path
-          id="arrow"
           d="M34.8,0,17.4,17.4,0,0"
-          transform="translate(45.399 17.399) rotate(180)"
+          transform="translate(46.297 17.399) rotate(180)"
           fill="none"
           stroke="#e63946"
           stroke-linecap="round"
