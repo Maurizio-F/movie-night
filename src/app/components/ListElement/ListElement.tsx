@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./List.module.css";
+import styles from "./ListElement.module.css";
 
 type ListProps = {
   headline: string;
@@ -8,7 +8,7 @@ type ListProps = {
   deleteButton: React.SVGProps<SVGSVGElement>;
 };
 
-function List({
+function ListElement({
   headline,
   date,
   shareButton,
@@ -28,4 +28,4 @@ function List({
   );
 }
 
-export default List;
+export default ListElement;
