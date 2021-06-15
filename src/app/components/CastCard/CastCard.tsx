@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./CastCard.module.css";
 
 type CastCardProps = {
   imgSrc: string;
@@ -8,13 +9,13 @@ type CastCardProps = {
 
 function CastCard({ imgSrc, name, filmName }: CastCardProps): JSX.Element {
   return (
-    <div>
+    <div className={styles.castCard}>
       <div>
-        <img src={imgSrc} alt="" />
+        <img className={styles.castCard__image} src={imgSrc} alt="" />
       </div>
       <div>
-        <h1>{name}</h1>
-        <h2>{filmName}</h2>
+        <h1 className={styles.castCard__name}>{name}</h1>
+        <h2 className={styles.castCard__filmName}>{filmName}</h2>
       </div>
     </div>
   );

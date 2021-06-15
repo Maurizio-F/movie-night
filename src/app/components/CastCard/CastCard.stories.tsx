@@ -4,9 +4,6 @@ import CastCard from "./CastCard";
 export default {
   title: "Component/CastCard",
   component: CastCard,
-  parameters: {
-    layout: "centered",
-  },
 };
 
 export const emmaStone = (): JSX.Element => (

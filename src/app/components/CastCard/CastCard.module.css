@@ -1,0 +1,19 @@
+.castCard {
+  width: min-content;
+  height: min-content;
+}
+
+.castCard__image {
+  width: 6em;
+  border-radius: 0.625em;
+}
+
+.castCard__name {
+  font-size: 1em;
+  margin: 0;
+}
+.castCard__filmName {
+  font-size: 0.9em;
+  font-weight: lighter;
+  margin: 0;
+}
