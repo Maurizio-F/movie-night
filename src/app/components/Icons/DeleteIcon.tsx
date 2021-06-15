@@ -4,8 +4,8 @@ function DeleteIcon(): JSX.Element {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="32.154"
-      height="38"
+      width="25"
+      height="25"
       viewBox="0 0 32.154 38"
     >
       <g transform="translate(-5 -3)">
