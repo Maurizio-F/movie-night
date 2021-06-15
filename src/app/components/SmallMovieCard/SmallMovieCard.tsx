@@ -22,3 +22,5 @@ function SmallMovieCard({
     </div>
   );
 }
+
+export default SmallMovieCard;
