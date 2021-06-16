@@ -18,13 +18,11 @@ name.args = {
   type: "string",
 };
 
-export const datum = (): JSX.Element => (
-  <InputField
-    label="Datum:"
-    placeholder="01.01.2021"
-    type="text"
-    value=""
-    required={true}
-    onChange={console.log}
-  />
-);
+export const datum = Template.bind({});
+
+datum.args = {
+  label: "string",
+  placeholder: "string",
+  value: "string",
+  type: "string",
+};
