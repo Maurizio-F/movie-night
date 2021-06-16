@@ -1,0 +1,21 @@
+.label {
+  display: flex;
+  align-items: center;
+  gap: 0.9em;
+  font-size: 1.2em;
+  color: var(--text-color);
+}
+
+.label__input {
+  border: 1px solid var(--secondary-color);
+  padding: 0.5em;
+  width: 15em;
+}
+
+.label__input::placeholder {
+  font-size: 0.9em;
+}
+
+.label__input:focus {
+  outline-color: var(--tertiary-color);
+}
