@@ -2,11 +2,9 @@ import React from "react";
 import StreamingService from "../StreamingService/StreamingService";
 
 export type AvailableProps = {
-  availableStreaming: [
-    {
-      streamingPath: string;
-    }
-  ];
+  availableStreaming: {
+    streamingPath: string;
+  }[];
 };
 
 function AvailableStreamingSection({
