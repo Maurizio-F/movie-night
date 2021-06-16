@@ -1,10 +1,10 @@
 import React from "react";
 
-type AvailableSectionProps = {
+type StreamingServiceProps = {
   imgSrc: string;
 };
 
-function AvailableSection({ imgSrc }: AvailableSectionProps): JSX.Element {
+function StreamingService({ imgSrc }: StreamingServiceProps): JSX.Element {
   return (
     <div>
       <img src={imgSrc} />
@@ -12,4 +12,4 @@ function AvailableSection({ imgSrc }: AvailableSectionProps): JSX.Element {
   );
 }
 
-export default AvailableSection;
+export default StreamingService;
