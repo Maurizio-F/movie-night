@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./InputField.module.css";
 
 type InputFieldProps = {
   label: string;
@@ -18,9 +19,10 @@ function InputField({
   onChange,
 }: InputFieldProps): JSX.Element {
   return (
-    <label>
+    <label className={styles.label}>
       {label}
       <input
+        className={styles.label__input}
         type={type}
         placeholder={placeholder}
         value={value}
