@@ -1,0 +1,13 @@
+.streamingSection {
+  display: grid;
+  justify-content: center;
+}
+
+.streamingSection__image,
+img {
+  display: flex;
+  align-items: center;
+  padding-left: 0.5em;
+  padding-top: 0.5em;
+  gap: 1.8em;
+}

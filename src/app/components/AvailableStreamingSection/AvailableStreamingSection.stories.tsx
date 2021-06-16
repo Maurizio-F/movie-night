@@ -18,6 +18,6 @@ const streaming = [
   },
 ];
 
-export const StreamingService = (): JSX.Element => (
+export const StreamingSection = (): JSX.Element => (
   <AvailableStreamingSection availableStreaming={streaming} />
 );
