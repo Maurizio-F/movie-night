@@ -1,21 +1,22 @@
 import React from "react";
-import InputField from "./InputField";
+import InputField, { InputFieldProps } from "./InputField";
+import { Story } from "@storybook/react";
 
 export default {
   title: "Component/InputField",
   component: InputField,
 };
 
-export const name = (): JSX.Element => (
-  <InputField
-    label="Name:"
-    placeholder="Bezeichnung"
-    type="text"
-    value=""
-    required={true}
-    onChange={console.log}
-  />
-);
+const Template: Story<InputFieldProps> = (args) => <InputField {...args} />;
+
+export const name = Template.bind({});
+
+name.args = {
+  label: "string",
+  placeholder: "string",
+  value: "string",
+  type: "string",
+};
 
 export const datum = (): JSX.Element => (
   <InputField
