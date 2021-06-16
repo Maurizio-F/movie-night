@@ -11,9 +11,9 @@ function AvailableSection({ imgSrc }: AvailableSectionProps): JSX.Element {
       <div>
         <AvailableSectionIcon />
       </div>
-      <img src={imgSrc} />;
-      <img src={imgSrc} />;
-      <img src={imgSrc} />;
+      <img src={imgSrc} />
+      <img src={imgSrc} />
+      <img src={imgSrc} />
     </div>
   );
 }
