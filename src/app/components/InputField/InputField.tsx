@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./InputField.module.css";
 
-type InputFieldProps = {
+export type InputFieldProps = {
   label: string;
   placeholder: string;
   value: string;
