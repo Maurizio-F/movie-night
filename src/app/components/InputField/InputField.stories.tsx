@@ -16,3 +16,14 @@ export const name = (): JSX.Element => (
     onChange={console.log}
   />
 );
+
+export const datum = (): JSX.Element => (
+  <InputField
+    label="Datum:"
+    placeholder="01.01.2021"
+    type="text"
+    value=""
+    required={true}
+    onChange={console.log}
+  />
+);
