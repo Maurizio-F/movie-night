@@ -12,17 +12,17 @@ const Template: Story<InputFieldProps> = (args) => <InputField {...args} />;
 export const name = Template.bind({});
 
 name.args = {
-  label: "string",
-  placeholder: "string",
-  value: "string",
-  type: "string",
+  label: "Name",
+  placeholder: "Bezeichnung",
+  value: "",
+  type: "text",
 };
 
 export const datum = Template.bind({});
 
 datum.args = {
-  label: "string",
-  placeholder: "string",
-  value: "string",
-  type: "string",
+  label: "Datum",
+  placeholder: "01.01.2021",
+  value: "",
+  type: "text",
 };
