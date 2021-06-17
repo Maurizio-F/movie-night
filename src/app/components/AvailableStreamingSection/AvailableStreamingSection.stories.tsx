@@ -8,13 +8,13 @@ export default {
 
 const streaming = [
   {
-    streamingPath: "/netflix.png",
+    streamingPath: "./netflix.png",
   },
   {
-    streamingPath: "/amazonPrime.png",
+    streamingPath: "./amazonPrime.png",
   },
   {
-    streamingPath: "/disney.png",
+    streamingPath: "./disney.png",
   },
 ];
 
