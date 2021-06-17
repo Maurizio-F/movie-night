@@ -1,0 +1,25 @@
+.container {
+  background: var(--tertiary-bg-color);
+  display: grid;
+  margin: 0;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
+}
+
+.logo {
+  align-content: center;
+}
+
+.footer {
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  bottom: 0;
+  left: 0;
+  max-height: 25em;
+  transform: translateY(8px);
+  justify-content: center;
+}

@@ -5,7 +5,7 @@ export default {
   title: "Page/Homescreen",
   component: Homescreen,
   parameters: {
-    layout: "Fullscreen",
+    layout: "fullscreen",
   },
 };
 
