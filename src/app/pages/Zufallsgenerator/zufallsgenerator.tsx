@@ -12,10 +12,10 @@ function Zufallsgenerator(): JSX.Element {
         <div>
           <NavBar />
         </div>
-        <div>
+        <div className={styles.bigMovieCard}>
           <BigMovieCard imgSrc={"./cruella.jpeg"} movieName={"Cruella"} />
         </div>
-        <div>
+        <div className={styles.button}>
           <Button>Nächster Film</Button>
         </div>
         <div className={styles.footer}>
