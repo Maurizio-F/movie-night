@@ -22,7 +22,6 @@ function AvailableSectionIcon(): JSX.Element {
           </tspan>
         </text>
         <path
-          data-name="Pfad 6"
           d="M0,1H56.5"
           transform="translate(0 17.5)"
           fill="var(--tertiary-color)"
