@@ -1,4 +1,5 @@
 import React from "react";
+import HomescreenLink from "../../components/HomescreenLink/HomescreenLink";
 import styles from "./Homescreen.module.css";
 import HomescreenElement from "./HomescreenElement";
 
@@ -6,13 +7,13 @@ function Homescreen(): JSX.Element {
   return (
     <div className={styles.container}>
       <main>
-        <div className={styles.logo}>
-          <img src="./logoWithText.png" alt="" />
-        </div>
+        <img className={styles.logo} src="./logoWithText.png" alt="" />
       </main>
-      <footer className={styles.footer}>
+      <div className={styles.bottom}>
+        <HomescreenLink text={"Planen"} link={""} />
+        <HomescreenLink text={"Zufallsgenerator"} link={""} />
         <HomescreenElement />
-      </footer>
+      </div>
     </div>
   );
 }
