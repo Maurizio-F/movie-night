@@ -5,7 +5,7 @@ import ShowMoreLink from "../../components/ShowMoreLink/ShowMoreLink";
 import Button from "../../components/Button/Button";
 import Footer from "../../components/Footer/Footer";
 
-function ZufallsgeneratorPage(): JSX.Element {
+function Zufallsgenerator(): JSX.Element {
   return (
     <div>
       <main>
@@ -27,4 +27,4 @@ function ZufallsgeneratorPage(): JSX.Element {
   );
 }
 
-export default ZufallsgeneratorPage;
+export default Zufallsgenerator;
