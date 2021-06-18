@@ -1,21 +1,17 @@
-import express from "express";
-import path from "path";
+import dotenv from "dotenv";
+dotenv.config();
 
-const { PORT = 3000 } = process.env;
+import express from "express";
+import { connectDatabase } from "./server/database";
 
 const app = express();
+const { PORT } = process.env;
 
-// Serve storybook production bundle
-app.use("/storybook", express.static("dist/storybook"));
+app.use(express.json());
 
-// Serve app production bundle
-app.use(express.static("dist/app"));
-
-// Handle client routing, return all requests to the app
-app.get("*", (_req, res) => {
-  res.sendFile(path.join(__dirname, "app/index.html"));
-});
-
-app.listen(PORT, () => {
-  console.log(`Server listening at http://localhost:${PORT}`);
+connectDatabase().then(() => {
+  console.log("Database connected");
+  app.listen(PORT, () => {
+    console.log(`MovieNight is listening at http://localhost:${PORT}`);
+  });
 });
