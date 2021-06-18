@@ -8,11 +8,13 @@
 }
 
 .bigMovieCard {
-  padding: 5em 0;
+  padding: 2em 0;
 }
 
 .footer {
   width: 100%;
   position: fixed;
   bottom: 0;
+  margin: 0;
+  max-height: 5em;
 }
