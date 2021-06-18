@@ -6,10 +6,8 @@
   display: block;
   padding: 0.5em 0.9em;
   width: 9em;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 1.2em;
   text-align: center;
   border: 0.06em solid var(--tertiary-color);
   border-radius: 0.325em;
-  margin-bottom: 1.2em;
 }

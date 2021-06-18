@@ -15,8 +15,8 @@
 
 .bottom {
   position: fixed;
+  bottom: 0;
   overflow: hidden;
   width: 100%;
-  bottom: 0;
   max-height: 25em;
 }
