@@ -2,13 +2,7 @@
   display: grid;
   margin: 0;
   position: relative;
-  height: 100vh;
-  overflow: hidden;
   text-align: center;
-}
-
-.bigMovieCard {
-  padding: 6.5em 0;
 }
 
 .footer {
