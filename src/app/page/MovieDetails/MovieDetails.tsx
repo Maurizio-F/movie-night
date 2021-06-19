@@ -9,7 +9,9 @@ function MovieDetails(): JSX.Element {
   return (
     <div className={styles.container}>
       <main>
-        <Trailer videoSrc="https://youtu.be/KIRKfx5Cbec" />
+        <div className={styles.trailer}>
+          <Trailer videoSrc="https://youtu.be/KIRKfx5Cbec" />
+        </div>
         <div className={styles.filmInfo}>
           <h2 className={styles.filmName}>Cruella</h2>
           <span className={styles.genre}>Komödie, Krimi</span>
@@ -25,8 +27,22 @@ function MovieDetails(): JSX.Element {
         </p>
         <hr className={styles.border}></hr>
 
-        <CastCard imgSrc="" name="" filmName="" />
-        <AvailableStreamingSection availableStreaming={streaming} />
+        <div className={styles.castSection}>
+          <CastCard
+            imgSrc="/emmaStone.jpeg"
+            name="Emma Stone"
+            filmName="Estella / Cruella"
+          />
+          <CastCard
+            imgSrc="/emmaThompson.jpeg"
+            name="Emma Thompson"
+            filmName="The Baroness"
+          />
+          <CastCard imgSrc="/joelFry.jpeg" name="Joel Fry" filmName="Japser" />
+        </div>
+        <div className={styles.availableStreaming}>
+          <AvailableStreamingSection availableStreaming={streaming} />
+        </div>
       </main>
       <footer className={styles.footer}>
         <Footer />

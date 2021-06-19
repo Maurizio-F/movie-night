@@ -13,7 +13,7 @@ function CastCard({ imgSrc, name, filmName }: CastCardProps): JSX.Element {
       <div>
         <img className={styles.castCard__image} src={imgSrc} alt="" />
       </div>
-      <div>
+      <div className={styles.nameSection}>
         <h1 className={styles.castCard__name}>{name}</h1>
         <h2 className={styles.castCard__filmName}>{filmName}</h2>
       </div>
