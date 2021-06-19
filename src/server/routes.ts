@@ -14,4 +14,10 @@ router.get("/actors:id", (_req, res) => {
   res.status(404).send();
 });
 
+// Post one
+
+router.post("/", (_req, res) => {
+  res.status(404).send("Movie send");
+});
+
 export default router;

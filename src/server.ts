@@ -8,16 +8,14 @@ import { connectDatabase } from "./server/database";
 const app = express();
 const { PORT } = process.env;
 
+connectDatabase();
+
 app.use(express.json());
 
 app.use("/api", router);
 
 app.get("/", (_req, res) => {
   res.send("Test1");
-});
-
-connectDatabase().then(() => {
-  console.log("Database connected");
 });
 
 app.listen(PORT, () => {

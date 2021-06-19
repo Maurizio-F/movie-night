@@ -13,5 +13,8 @@ export async function connectDatabase(): Promise<void> {
     useUnifiedTopology: true,
   });
 
+  client.on("error", (error) => console.log(error));
+  client.once("open", () => console.log("Connected to Database"));
+
   await client.connect();
 }
