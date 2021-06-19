@@ -3,10 +3,11 @@ import Trailer from "../../components/Trailer/Trailer";
 import CastCard from "../../components/CastCard/CastCard";
 import AvailableStreamingSection from "../../components/AvailableStreamingSection/AvailableStreamingSection";
 import Footer from "../../components/Footer/Footer";
+import styles from "./MovieDetails.module.css";
 
 function MovieDetails(): JSX.Element {
   return (
-    <div>
+    <div className={styles.container}>
       <main>
         <Trailer videoSrc="https://youtu.be/KIRKfx5Cbec" />
         <div>
