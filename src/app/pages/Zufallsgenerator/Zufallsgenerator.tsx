@@ -17,7 +17,7 @@ function Zufallsgenerator(): JSX.Element {
         </div>
         <Button>Nächster Film</Button>
       </main>
-      <footer>
+      <footer className={styles.footer}>
         <Footer />
       </footer>
     </div>
