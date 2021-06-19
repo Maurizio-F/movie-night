@@ -4,17 +4,14 @@ const router = express.Router();
 
 // Get one movie
 
-router.get("/movies/:id", (req, res) => {
-  req.params.id;
-  res.status(404).send;
+router.get("/movies/:id", (_req, res) => {
+  res.status(404).send("Movies");
 });
 
 // Get one actor
 
-router.get("/actors:id"),
-  (req, res) => {
-    req.params.id;
-    res.status(404).send;
-  };
+router.get("/actors:id", (_req, res) => {
+  res.status(404).send();
+});
 
 export default router;

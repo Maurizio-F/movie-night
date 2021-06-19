@@ -12,9 +12,14 @@ app.use(express.json());
 
 app.use("/api", router);
 
+app.get("/", (_req, res) => {
+  res.send("Test1");
+});
+
 connectDatabase().then(() => {
   console.log("Database connected");
-  app.listen(PORT, () => {
-    console.log(`MovieNight is listening at http://localhost:${PORT}`);
-  });
+});
+
+app.listen(PORT, () => {
+  console.log(`MovieNight is listening at http://localhost:${PORT}`);
 });
