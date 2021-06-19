@@ -10,19 +10,21 @@ function MovieDetails(): JSX.Element {
     <div className={styles.container}>
       <main>
         <Trailer videoSrc="https://youtu.be/KIRKfx5Cbec" />
-        <div>
-          <h2>Cruella</h2>
-          <span>Komödie, Krimi</span>
-          <span>134 min</span>
+        <div className={styles.filmInfo}>
+          <h2 className={styles.filmName}>Cruella</h2>
+          <span className={styles.genre}>Komödie, Krimi</span>
+          <span className={styles.runtime}>134 min</span>
         </div>
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-            tenetur perferendis expedita magni eius consectetur aliquid
-            reprehenderit vel maxime nulla, adipisci excepturi laborum sapiente
-            est, optio asperiores vitae rerum eum!
-          </p>
-        </div>
+        <hr className={styles.border}></hr>
+
+        <p className={styles.filmText}>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+          tenetur perferendis expedita magni eius consectetur aliquid
+          reprehenderit vel maxime nulla, adipisci excepturi laborum sapiente
+          est, optio asperiores vitae rerum eum!
+        </p>
+        <hr className={styles.border}></hr>
+
         <CastCard imgSrc="" name="" filmName="" />
         <AvailableStreamingSection availableStreaming={streaming} />
       </main>
