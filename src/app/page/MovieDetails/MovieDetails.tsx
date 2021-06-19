@@ -26,7 +26,7 @@ function MovieDetails(): JSX.Element {
         <CastCard imgSrc="" name="" filmName="" />
         <AvailableStreamingSection availableStreaming={streaming} />
       </main>
-      <footer>
+      <footer className={styles.footer}>
         <Footer />
       </footer>
     </div>
