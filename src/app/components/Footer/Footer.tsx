@@ -1,13 +1,8 @@
 import React from "react";
-import styles from "./Footer.module.css";
 
 function Footer(): JSX.Element {
   return (
-    <svg
-      className={styles.footer}
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 428 44"
-    >
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 428 44">
       <g transform="translate(0 2)" fill="var(--primary-bg-color)">
         <path
           d="M 319.6621704101562 41.5 L 0.5 41.5 L 0.5 0.5616171956062317 L 135.6813201904297 16.3101863861084 L 319.6621704101562 41.5 Z"
