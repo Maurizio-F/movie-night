@@ -6,12 +6,15 @@ if (!THE_MOVIE_DB_KEY) {
   throw new Error("process.env.THE_MOVIE_DB_KEY is missing");
 }
 
-async function fetchMovie(): Promise<void> {
-  return fetch(
-    `https://api.themoviedb.org/3/movie/{movie_id}?api_key=${THE_MOVIE_DB_KEY}`
-  ).then((data) => data.json());
+export async function fetchMovie(id: string): Promise<void> {
+  const response = await fetch(
+    `https://api.themoviedb.org/3/movie/${id}?api_key=${THE_MOVIE_DB_KEY}`
+  );
+  if (!response.ok) {
+    throw new Error("ERROR");
+  }
+  const result = await response.json();
+  return result;
 }
 
 console.log(fetchMovie);
-
-export default fetchMovie;
