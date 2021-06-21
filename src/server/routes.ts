@@ -1,5 +1,5 @@
 import express from "express";
-import { fetchMovie } from "./movieDatabase";
+import { getMovie } from "./movieDatabase";
 
 const router = express.Router();
 
@@ -8,7 +8,7 @@ const router = express.Router();
 router.get("/movies/:id", async (req, res, next) => {
   try {
     const { id } = req.params;
-    const movie = await fetchMovie(id);
+    const movie = await getMovie(id);
     res.status(200).json(movie);
   } catch (error) {
     next(error);
