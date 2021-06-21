@@ -16,5 +16,3 @@ export async function fetchMovie(id: string): Promise<void> {
   const result = await response.json();
   return result;
 }
-
-console.log(fetchMovie);
