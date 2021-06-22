@@ -28,17 +28,9 @@ function MovieDetails(): JSX.Element {
         <hr className={styles.border}></hr>
 
         <div className={styles.castSection}>
-          <CastCard
-            imgSrc="/emmaStone.jpeg"
-            name="Emma Stone"
-            filmName="Estella / Cruella"
-          />
-          <CastCard
-            imgSrc="/emmaThompson.jpeg"
-            name="Emma Thompson"
-            filmName="The Baroness"
-          />
-          <CastCard imgSrc="/joelFry.jpeg" name="Joel Fry" filmName="Japser" />
+          <CastCard imgSrc="/emmaStone.jpeg" name="Emma Stone" />
+          <CastCard imgSrc="/emmaThompson.jpeg" name="Emma Thompson" />
+          <CastCard imgSrc="/joelFry.jpeg" name="Joel Fry" />
         </div>
         <div className={styles.availableStreaming}>
           <AvailableStreamingSection availableStreaming={streaming} />

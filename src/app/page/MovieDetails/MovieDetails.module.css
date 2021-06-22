@@ -21,6 +21,7 @@
   display: grid;
   grid-template-columns: 5em 1fr;
   padding: 1em 3em 1em;
+  column-gap: 1em;
 }
 
 .filmName {
