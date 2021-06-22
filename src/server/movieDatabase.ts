@@ -8,7 +8,7 @@ if (!THE_MOVIE_DB_KEY) {
 
 export async function fetchMovieApi(id: string): Promise<FetchResult> {
   const response = await fetch(
-    `https://api.themoviedb.org/3/movie/${id}?api_key=${THE_MOVIE_DB_KEY}`
+    `https://api.themoviedb.org/3/movie/${id}?api_key=${THE_MOVIE_DB_KEY}&append_to_response=videos`
   );
   if (!response.ok) {
     throw new Error("ERROR");
@@ -27,9 +27,19 @@ export async function getMovie(id: string): Promise<MovieResult> {
     posterPath: fullMovie.poster_path,
     runtime: fullMovie.runtime,
     title: fullMovie.title,
-    video: fullMovie.video,
   };
   return movie;
+}
+
+export async function fetchCreditsApi(id: string): Promise<FetchCreditsResult> {
+  const response = await fetch(
+    `https://api.themoviedb.org/3/movie/${id}/credits?api_key=${THE_MOVIE_DB_KEY}`
+  );
+  if (!response.ok) {
+    throw new Error("ERROR");
+  }
+  const result = await response.json();
+  return result;
 }
 
 type FetchResult = {
@@ -78,6 +88,49 @@ type FetchResult = {
   video: boolean;
   vote_average: number;
   vote_count: number;
+  videos: {
+    results: {
+      id: string;
+      iso_639_1: string;
+      iso_3166_1: string;
+      key: string;
+      name: string;
+      site: string;
+      size: number;
+      type: string;
+    };
+  }[];
+};
+
+type FetchCreditsResult = {
+  id: number;
+  cast: {
+    adult: boolean;
+    gender: number | null;
+    id: number;
+    known_for_department: string;
+    name: string;
+    original_name: string;
+    popularity: string;
+    profile_path: string;
+    cast_id: number;
+    character: string;
+    credit_id: string;
+    order: number;
+  }[];
+  crew: {
+    adult: boolean;
+    gender: number | null;
+    id: number;
+    known_for_department: string;
+    name: string;
+    original_name: string;
+    popularity: string;
+    profile_path: string;
+    credit_id: string;
+    department: string;
+    job: string;
+  }[];
 };
 
 type MovieResult = {
@@ -87,5 +140,4 @@ type MovieResult = {
   posterPath: string | null;
   runtime: number | null;
   title: string;
-  video: boolean;
 };
