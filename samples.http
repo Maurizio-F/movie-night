@@ -2,11 +2,11 @@
 @port = {{$dotenv PORT}}
 @baseUrl = http://localhost:{{port}}
 
-### Movie test
-GET {{baseUrl}}/api/test/343611
-
-### Movie
-GET {{baseUrl}}/api/movies/343611
+### Movie complete
+GET {{baseUrl}}/api/moviedata/343611
 
 ### Actor
 GET {{baseUrl}}/api/actors/343611
+
+### Movie
+GET {{baseUrl}}/api/movies/343611

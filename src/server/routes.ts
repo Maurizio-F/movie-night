@@ -4,7 +4,7 @@ import { fetchCreditsApi, fetchMovieApi, getMovie } from "./movieDatabase";
 const router = express.Router();
 
 // All data
-router.get("/test/:id", async (req, res, next) => {
+router.get("/moviedata/:id", async (req, res, next) => {
   try {
     const { id } = req.params;
     const movie = await fetchMovieApi(id);
