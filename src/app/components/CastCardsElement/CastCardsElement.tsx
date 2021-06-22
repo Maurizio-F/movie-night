@@ -1,5 +1,6 @@
 import React from "react";
 import CastCard from "../CastCard/CastCard";
+import styles from "./CastCardsElement.module.css";
 
 export type CastCardsElementProps = {
   actors: Array<{
@@ -10,7 +11,7 @@ export type CastCardsElementProps = {
 
 function CastCardElement({ actors }: CastCardsElementProps): JSX.Element {
   return (
-    <div>
+    <div className={styles.castCards}>
       {actors.map((actor) => (
         <CastCard
           key={actor.artistName}
