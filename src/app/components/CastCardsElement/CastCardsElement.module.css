@@ -1,0 +1,7 @@
+.castCards {
+  display: grid;
+}
+
+.castCards:-webkit-scrollbar {
+  display: none;
+}
