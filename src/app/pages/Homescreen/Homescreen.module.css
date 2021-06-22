@@ -1,0 +1,26 @@
+.container {
+  background: var(--tertiary-bg-color);
+  display: grid;
+  margin: 0;
+  position: relative;
+  height: 100vh;
+  text-align: center;
+}
+
+.logo {
+  width: 80%;
+  padding-top: 8em;
+}
+
+.bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-height: 25em;
+}
+
+@media (max-width: 320px) {
+  .logo {
+    padding-top: 2em;
+  }
+}

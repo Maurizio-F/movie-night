@@ -1,14 +1,15 @@
 .movieCard {
-  width: 16em;
+  width: 19em;
   height: 30em;
   border-radius: 0.625em;
+  margin: 5em auto;
   text-align: center;
   padding-top: 1em;
   box-shadow: 2px -2px 39px 2px rgba(0, 0, 0, 0.31);
 }
 
 .movieCard__image {
-  height: 20em;
+  height: 22em;
   width: auto;
   border-radius: 0.625em;
 }
@@ -17,4 +18,25 @@
   margin: 0;
   padding-bottom: 0.5em;
   font-size: 1.6em;
+}
+
+@media (max-width: 320px) {
+  .movieCard {
+    width: 15em;
+    height: 25em;
+    border-radius: 0.625em;
+    margin: 1em auto;
+    text-align: center;
+  }
+  .movieCard__image {
+    height: 17em;
+    width: auto;
+    border-radius: 0.625em;
+  }
+
+  .movieCard__headline {
+    margin: 0;
+    padding-bottom: 0.5em;
+    font-size: 1.6em;
+  }
 }

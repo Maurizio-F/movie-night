@@ -1,0 +1,14 @@
+.container {
+  display: grid;
+  margin: 0;
+  position: relative;
+  text-align: center;
+}
+
+.footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  margin: 0;
+  max-height: 5em;
+}

@@ -5,4 +5,11 @@
   border: 0.06em solid var(--secondary-color);
   border-radius: 0.325em;
   padding: 0.5em 0.9em;
+  font-size: 1.5em;
+}
+
+@media (max-width: 320px) {
+  .button {
+    font-size: 1em;
+  }
 }

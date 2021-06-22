@@ -1,10 +1,20 @@
 .homescreenLink {
   font-family: var(--font-family);
+  font-size: 2em;
+  background-color: var(--secondary-bg-color);
   color: var(--text-color);
   display: block;
   padding: 0.5em 0.9em;
-  width: 9em;
+  width: 80%;
+  margin: 0 auto 1.2em;
   text-align: center;
   border: 0.06em solid var(--tertiary-color);
   border-radius: 0.325em;
+}
+
+@media (max-width: 320px) {
+  .homescreenLink {
+    font-size: 0.9em;
+    width: 50%;
+  }
 }
