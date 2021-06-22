@@ -6,6 +6,6 @@
   overflow: scroll;
 }
 
-.castCards:-webkit-scrollbar {
+.castCards::-webkit-scrollbar {
   display: none;
 }
