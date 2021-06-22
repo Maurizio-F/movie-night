@@ -27,6 +27,7 @@ function MovieDetails(): JSX.Element {
         </p>
         <hr className={styles.border}></hr>
 
+        <p className={styles.castHeadline}>Darsteller</p>
         <div className={styles.castSection}>
           <CastCard imgSrc="/emmaStone.jpeg" name="Emma Stone" />
           <CastCard imgSrc="/emmaThompson.jpeg" name="Emma Thompson" />
