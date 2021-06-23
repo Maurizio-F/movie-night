@@ -20,12 +20,12 @@
   font-size: 1.6em;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   .movieCard {
     width: 15em;
     height: 25em;
     border-radius: 0.625em;
-    margin: 1em auto;
+    margin: 2em auto;
     text-align: center;
   }
   .movieCard__image {

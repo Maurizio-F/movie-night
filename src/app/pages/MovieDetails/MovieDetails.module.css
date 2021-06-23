@@ -78,19 +78,19 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   .trailer {
     width: 100%;
   }
 
   .filmText {
-    max-width: 19em;
+    max-width: 22em;
   }
 
   .border {
     border: 1px solid var(--tertiary-color);
     text-align: center;
-    width: 14em;
+    width: 18em;
   }
   .availableStreaming {
     padding-bottom: 2em;
