@@ -9,4 +9,4 @@ GET {{baseUrl}}/api/moviedata/343611
 GET {{baseUrl}}/api/actors/343611
 
 ### Movie
-GET {{baseUrl}}/api/movies/343611
+GET {{baseUrl}}/api/movies/343611 

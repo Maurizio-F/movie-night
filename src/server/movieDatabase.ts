@@ -19,14 +19,22 @@ export async function fetchMovieApi(id: string): Promise<FetchResult> {
 
 export async function getMovie(id: string): Promise<MovieResult> {
   const fullMovie = await fetchMovieApi(id);
+  const fullCast = await fetchCreditsApi(id);
 
-  const movie = {
+  const movie: MovieResult = {
     genres: fullMovie.genres.map((genre) => genre.name),
     id: fullMovie.id,
     overview: fullMovie.overview,
     posterPath: fullMovie.poster_path,
     runtime: fullMovie.runtime,
     title: fullMovie.title,
+    video: fullMovie.videos.results.map((result) => result.key),
+    actors: fullCast.cast.map((actor) => ({
+      id: actor.id,
+      name: actor.name,
+      profilePath: actor.profile_path,
+      character: actor.character,
+    })),
   };
   return movie;
 }
@@ -98,8 +106,8 @@ type FetchResult = {
       site: string;
       size: number;
       type: string;
-    };
-  }[];
+    }[];
+  };
 };
 
 type FetchCreditsResult = {
@@ -140,4 +148,11 @@ type MovieResult = {
   posterPath: string | null;
   runtime: number | null;
   title: string;
+  actors: {
+    id: number;
+    name: string;
+    profilePath: string;
+    character: string;
+  }[];
+  video: string[];
 };
