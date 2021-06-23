@@ -6,8 +6,8 @@ export type InputFieldProps = {
   placeholder: string;
   value: string;
   type: string;
-  required: boolean;
-  onChange: (value: string) => void;
+  required?: boolean;
+  onChange?: (value: string) => void;
 };
 
 function InputField({

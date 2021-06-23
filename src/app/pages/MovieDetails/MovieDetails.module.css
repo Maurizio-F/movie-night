@@ -65,7 +65,7 @@
   position: fixed;
   bottom: 0;
   margin: 0;
-  max-height: 5em;
+  max-height: 2.4em;
 }
 
 @media (max-width: 414px) {
