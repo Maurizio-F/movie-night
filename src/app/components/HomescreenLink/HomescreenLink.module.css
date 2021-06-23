@@ -12,9 +12,9 @@
   border-radius: 0.325em;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   .homescreenLink {
-    font-size: 0.9em;
+    font-size: 1em;
     width: 50%;
   }
 }
