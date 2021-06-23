@@ -5,6 +5,7 @@
   border-radius: 0.625em;
   padding: 1em 1em 1em;
   box-shadow: 2px -2px 39px 2px rgba(0, 0, 0, 0.31);
+  margin: 1em auto;
 }
 
 .movieCard__image {
@@ -26,4 +27,31 @@
 .movieCard__runtime {
   display: block;
   font-size: 1.2em;
+}
+
+@media (max-width: 375px) {
+  .movieCard {
+    width: 15em;
+  }
+  .movieCard__image {
+    height: 9em;
+  }
+
+  .movieCard__headline {
+    font-size: 1.3em;
+  }
+
+  .movieCard__genres {
+    font-size: 1em;
+  }
+
+  .movieCard__runtime {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 414px) {
+  .movieCard {
+    width: 19em;
+  }
 }
