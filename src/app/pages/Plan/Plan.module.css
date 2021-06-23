@@ -5,6 +5,20 @@
   text-align: center;
 }
 
+.inputField {
+  padding: 1em;
+}
+
+.genreHeadline {
+  font-size: 1.5em;
+  margin: 0.3em 0;
+}
+
+.genreField {
+  margin: 0.6em;
+  padding: 0.5em;
+}
+
 .footer {
   width: 100%;
   position: fixed;

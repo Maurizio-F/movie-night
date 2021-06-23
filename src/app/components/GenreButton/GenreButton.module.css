@@ -5,4 +5,10 @@
   border: 0.06em solid var(--secondary-color);
   border-radius: 1.875em;
   padding: 0.5em 0.9em;
+  margin: 0.3em;
+}
+
+.genreButton:active {
+  background-color: var(--tertiary-bg-color);
+  color: var(--secondary-text-color);
 }
