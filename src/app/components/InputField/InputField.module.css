@@ -4,7 +4,9 @@
   gap: 0.9em;
   font-size: 1.2em;
   color: var(--text-color);
-  text-align: left;
+  text-align: center;
+  max-width: min-content;
+  margin: 1em auto;
 }
 label:first-of-type {
   gap: 1.2em;
