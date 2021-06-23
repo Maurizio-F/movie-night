@@ -1,0 +1,11 @@
+.castCards {
+  display: grid;
+  column-gap: 1em;
+  width: 100%;
+  grid-auto-flow: column;
+  overflow: scroll;
+}
+
+.castCards::-webkit-scrollbar {
+  display: none;
+}

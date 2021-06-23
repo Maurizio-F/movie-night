@@ -1,12 +1,17 @@
 .castCard {
-  width: min-content;
-  height: min-content;
+  width: 7em;
+  height: 12em;
   box-shadow: 2px -2px 39px 2px rgba(0, 0, 0, 0.31);
   border-radius: 0.625em;
+  margin: 0 1em;
+}
+
+.nameSection {
+  padding-bottom: 1em;
 }
 
 .castCard__image {
-  width: 6em;
+  width: 7em;
   border-top-left-radius: 0.625em;
   border-top-right-radius: 0.625em;
 }
@@ -22,4 +27,39 @@
   margin: 0;
   padding-bottom: 0.3em;
   padding-left: 0.3em;
+}
+
+@media (max-width: 414px) {
+  .castCard {
+    width: 6em;
+    height: 11em;
+    margin: 1em 0.5em;
+  }
+
+  .castCard__image {
+    width: 6em;
+    border-top-left-radius: 0.625em;
+    border-top-right-radius: 0.625em;
+  }
+}
+
+@media (max-width: 320px) {
+  .castCard {
+    width: 4em;
+    height: 7.3em;
+    margin: 0.4em;
+  }
+
+  .castCard__image {
+    width: 4em;
+    border-top-left-radius: 0.625em;
+    border-top-right-radius: 0.625em;
+  }
+
+  .castCard__name {
+    font-size: 0.7em;
+  }
+  .castCard__filmName {
+    font-size: 0.5em;
+  }
 }

@@ -2,12 +2,7 @@ import React from "react";
 
 function AvailableSectionIcon(): JSX.Element {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="280"
-      height="37"
-      viewBox="0 0 354 37"
-    >
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 354 37">
       <g data-name="Komponente 13 – 1" transform="translate(1)">
         <text
           data-name="Verfügbar bei"
