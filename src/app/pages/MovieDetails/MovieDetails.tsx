@@ -13,7 +13,7 @@ function MovieDetails(): JSX.Element {
           <Trailer videoSrc="https://youtu.be/KIRKfx5Cbec" />
         </div>
         <div className={styles.filmInfo}>
-          <h2 className={styles.filmName}>Cruella</h2>
+          <h2 className={styles.filmName}>{}</h2>
           <span className={styles.genre}>Komödie, Krimi</span>
           <span className={styles.runtime}>134 min</span>
         </div>

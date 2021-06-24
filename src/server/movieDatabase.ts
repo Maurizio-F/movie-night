@@ -141,7 +141,7 @@ type FetchCreditsResult = {
   }[];
 };
 
-type MovieResult = {
+export type MovieResult = {
   genres: string[];
   id: number;
   overview: string | null;
