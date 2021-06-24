@@ -3,10 +3,11 @@ import NavBar from "../../components/NavBar/NavBar";
 import BigMovieCard from "../../components/BigMovieCard/BigMovieCard";
 import SwipeGameButton from "../../components/SwipeGameButton/SwipeGameButton";
 import Footer from "../../components/Footer/Footer";
+import styles from "./SwipeGame.module.css";
 
 function SwipeGame(): JSX.Element {
   return (
-    <div>
+    <div className={styles.container}>
       <header>
         <NavBar />
       </header>
@@ -16,7 +17,7 @@ function SwipeGame(): JSX.Element {
           <SwipeGameButton />
         </div>
       </main>
-      <footer>
+      <footer className={styles.footer}>
         <Footer />
       </footer>
     </div>
