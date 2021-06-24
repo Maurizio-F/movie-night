@@ -5,16 +5,17 @@ import ListElement from "../../components/ListElement/ListElement";
 import Footer from "../../components/Footer/Footer";
 import ShareIcon from "../../components/Icons/ShareIcon";
 import DeleteIcon from "../../components/Icons/DeleteIcon";
+import styles from "./Overview.module.css";
 
 function Overview(): JSX.Element {
   return (
-    <div>
+    <div className={styles.container}>
       <header>
         <NavBar />
       </header>
       <main>
         <BackButton />
-        <div>
+        <div className={styles.listElement}>
           <ListElement
             headline="Filmabend 1"
             date="06.07.2021"
@@ -39,7 +40,7 @@ function Overview(): JSX.Element {
           />
         </div>
       </main>
-      <footer>
+      <footer className={styles.footer}>
         <Footer />
       </footer>
     </div>
