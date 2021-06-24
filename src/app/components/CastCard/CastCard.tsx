@@ -4,9 +4,10 @@ import styles from "./CastCard.module.css";
 type CastCardProps = {
   imgSrc: string;
   name: string;
+  character: string;
 };
 
-function CastCard({ imgSrc, name }: CastCardProps): JSX.Element {
+function CastCard({ imgSrc, name, character }: CastCardProps): JSX.Element {
   return (
     <div className={styles.castCard}>
       <div>
@@ -14,6 +15,7 @@ function CastCard({ imgSrc, name }: CastCardProps): JSX.Element {
       </div>
       <div className={styles.nameSection}>
         <h1 className={styles.castCard__name}>{name}</h1>
+        <h2 className={styles.castCard_characterName}>{character}</h2>
       </div>
     </div>
   );

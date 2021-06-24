@@ -2,21 +2,24 @@ import React from "react";
 import CastCard from "../CastCard/CastCard";
 import styles from "./CastCardsElement.module.css";
 
-export type CastCardsElementProps = {
+type CastCardElement = {
   actors: Array<{
+    id: number;
     profilePath: string;
-    artistName: string;
+    name: string;
+    character: string;
   }>;
 };
 
-function CastCardElement({ actors }: CastCardsElementProps): JSX.Element {
+function CastCardElement({ actors }: CastCardElement): JSX.Element {
   return (
     <div className={styles.castCards}>
       {actors.map((actor) => (
         <CastCard
-          key={actor.artistName}
+          key={actor.id}
           imgSrc={actor.profilePath}
-          name={actor.artistName}
+          name={actor.name}
+          character={actor.character}
         />
       ))}
     </div>
