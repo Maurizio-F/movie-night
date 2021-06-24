@@ -16,7 +16,6 @@ function InputField({
   value,
   type,
   required,
-  onChange,
 }: InputFieldProps): JSX.Element {
   return (
     <label className={styles.label}>
@@ -27,7 +26,6 @@ function InputField({
         placeholder={placeholder}
         value={value}
         required={required}
-        onChange={(event) => onChange(event.target.value)}
       />
     </label>
   );
