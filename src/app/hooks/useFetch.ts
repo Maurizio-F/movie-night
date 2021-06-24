@@ -1,19 +1,17 @@
 import { useEffect, useState } from "react";
 
-function useFetch(
-  url: string
-): {
-  data: string | null;
-} {
-  const [data, setData] = useState<string | null>(null);
-
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const useFetch = (url: string): any => {
+  const [data, setData] = useState(null);
   useEffect(() => {
-    fetch(url)
-      .then((response) => response.json())
-      .then(setData);
+    const fetchData = async () => {
+      const res = await fetch(url);
+      const json = await res.json();
+      setData(json);
+    };
+    fetchData();
   }, []);
-
-  return { data };
-}
+  return data;
+};
 
 export default useFetch;

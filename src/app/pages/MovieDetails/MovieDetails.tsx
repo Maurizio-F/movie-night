@@ -4,8 +4,12 @@ import CastCard from "../../components/CastCard/CastCard";
 import AvailableStreamingSection from "../../components/AvailableStreamingSection/AvailableStreamingSection";
 import Footer from "../../components/Footer/Footer";
 import styles from "./MovieDetails.module.css";
+import useFetch from "../../hooks/useFetch";
 
 function MovieDetails(): JSX.Element {
+  const movie = useFetch("/api/movies/343611");
+  console.log(movie);
+
   return (
     <div className={styles.container}>
       <main>
