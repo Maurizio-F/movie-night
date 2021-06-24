@@ -22,3 +22,5 @@ function MatchPage(): JSX.Element {
     </div>
   );
 }
+
+export default MatchPage;
