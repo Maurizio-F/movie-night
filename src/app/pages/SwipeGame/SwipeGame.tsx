@@ -13,7 +13,7 @@ function SwipeGame(): JSX.Element {
       </header>
       <main>
         <BigMovieCard imgSrc="./cruella.jpeg" movieName="Cruella" />
-        <div>
+        <div className={styles.swipeGameButton}>
           <SwipeGameButton />
         </div>
       </main>
