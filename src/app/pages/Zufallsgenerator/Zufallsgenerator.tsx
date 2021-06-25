@@ -4,8 +4,16 @@ import BigMovieCard from "../../components/BigMovieCard/BigMovieCard";
 import Button from "../../components/Button/Button";
 import Footer from "../../components/Footer/Footer";
 import styles from "./Zufallsgenerator.module.css";
+import useFetch from "../../hooks/useFetch";
+import { MovieResult } from "../../../server/movieDatabase";
 
 function Zufallsgenerator(): JSX.Element {
+  const movie = useFetch<MovieResult>("/api/movies/337404");
+
+  if (!movie) {
+    return <div>No Movie found</div>;
+  }
+
   return (
     <div className={styles.container}>
       <header>
@@ -13,7 +21,7 @@ function Zufallsgenerator(): JSX.Element {
       </header>
       <main>
         <div className={styles.bigMovieCard}>
-          <BigMovieCard imgSrc={"./cruella.jpeg"} movieName={"Cruella"} />
+          <BigMovieCard imgSrc={movie.posterPath} movieName={"Cruella"} />
         </div>
         <Button>Nächster Film</Button>
       </main>
