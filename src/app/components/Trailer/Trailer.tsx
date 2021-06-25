@@ -1,4 +1,6 @@
 import React from "react";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import YoutubePlayer from "react-youtube-player";
 
 type TrailerProps = {

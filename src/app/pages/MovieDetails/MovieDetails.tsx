@@ -23,7 +23,7 @@ function MovieDetails(): JSX.Element {
     <div className={styles.container}>
       <main>
         <div className={styles.trailer}>
-          <Trailer videoSrc="KIRKfx5Cbec" />
+          <Trailer videoSrc={movie.video[0]} />
         </div>
         <div className={styles.filmInfo}>
           <h2 className={styles.filmName}>{movie.title}</h2>

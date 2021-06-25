@@ -1,7 +1,7 @@
 .castCards {
   display: grid;
   column-gap: 1em;
-  width: 22em;
+  width: 20em;
   padding: 0.9em;
   height: max-content;
   grid-auto-flow: column;
