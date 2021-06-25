@@ -18,7 +18,7 @@ function BigMovieCard({ imgSrc, movieName }: CardProps): JSX.Element {
         />
       </div>
       <h1 className={styles.movieCard__headline}>{movieName}</h1>
-      <ShowMoreLink link="#" />
+      <ShowMoreLink link="/movies/337404" />
     </div>
   );
 }

@@ -146,7 +146,7 @@ export type MovieResult = {
   genres: string[];
   id: number;
   overview: string | null;
-  posterPath: string | null;
+  posterPath: string;
   runtime: number | null;
   title: string;
   actors: {

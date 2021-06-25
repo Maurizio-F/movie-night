@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Planen } from "./components/HomescreenLink/HomescreenLink.stories";
 import Homescreen from "./pages/Homescreen/Homescreen";
 import MovieDetails from "./pages/MovieDetails/MovieDetails";
-import { ZufallsgeneratorPage } from "./pages/Zufallsgenerator/Zufallsgenerator.stories";
+import Planen from "./pages/Plan/Plan";
+import Zufallsgenerator from "./pages/Zufallsgenerator/Zufallsgenerator";
 
 function App(): JSX.Element {
   return (
@@ -16,7 +16,7 @@ function App(): JSX.Element {
           <Planen />
         </Route>
         <Route exact path="/zufallsgenerator">
-          <ZufallsgeneratorPage />
+          <Zufallsgenerator />
         </Route>
         <Route exact path="/movies/:id">
           <MovieDetails />

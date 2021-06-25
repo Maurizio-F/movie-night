@@ -13,8 +13,6 @@ import disney from "../../assets/disney.png";
 function MovieDetails(): JSX.Element {
   const movie = useFetch<MovieResult>("/api/movies/337404");
 
-  console.log(movie);
-
   if (!movie) {
     return <div>No Movie found</div>;
   }

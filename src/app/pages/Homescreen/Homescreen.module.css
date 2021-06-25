@@ -16,11 +16,12 @@
   position: fixed;
   bottom: 0;
   width: 100%;
-  max-height: 20em;
+  max-height: 22em;
 }
 
 @media (max-width: 375px) {
   .logo {
     padding-top: 3em;
+    width: 90%;
   }
 }
