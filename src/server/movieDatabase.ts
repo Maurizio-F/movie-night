@@ -23,7 +23,7 @@ export async function getMovie(id: string): Promise<MovieResult> {
   const fullCast = await fetchCreditsApi(id);
 
   const movie: MovieResult = {
-    genres: fullMovie.genres.map((genre) => genre.name),
+    genres: fullMovie.genres.map((genre) => genre.name).join(", "),
     id: fullMovie.id,
     overview: fullMovie.overview,
     posterPath: `${IMAGE_BASE_URL}${fullMovie.poster_path}`,

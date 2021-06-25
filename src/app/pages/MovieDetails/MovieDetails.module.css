@@ -95,10 +95,6 @@
     align-items: baseline;
   }
 
-  .genre::after {
-    content: ", ";
-  }
-
   .runtime {
     display: block;
     font-size: 0.7em;

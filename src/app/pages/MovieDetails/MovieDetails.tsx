@@ -25,7 +25,7 @@ function MovieDetails(): JSX.Element {
         </div>
         <div className={styles.filmInfo}>
           <h2 className={styles.filmName}>{movie.title}</h2>
-          <span className={styles.genre}>{movie.genres}</span>
+          <span className={styles.genre}>{`${movie.genres}`}</span>
           <span className={styles.runtime}>{movie.runtime} min</span>
         </div>
         <hr className={styles.border}></hr>
