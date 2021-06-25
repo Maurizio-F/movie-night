@@ -1,13 +1,9 @@
 .castCard {
   width: 7em;
-  height: 12em;
-  box-shadow: 2px -2px 39px 2px rgba(0, 0, 0, 0.31);
+  height: min-content;
+  box-shadow: 1px 1px 13px 2px rgba(0, 0, 0, 0.31);
   border-radius: 0.625em;
   margin: 0 1em;
-}
-
-.nameSection {
-  padding-bottom: 1em;
 }
 
 .castCard__image {
@@ -21,7 +17,7 @@
   margin: 0;
   padding-left: 0.3em;
 }
-.castCard__filmName {
+.castCard__characterName {
   font-size: 0.7em;
   font-weight: lighter;
   margin: 0;
@@ -32,7 +28,7 @@
 @media (max-width: 414px) {
   .castCard {
     width: 6em;
-    height: 11em;
+    height: min-content;
     margin: 1em 0.5em;
   }
 
@@ -41,17 +37,26 @@
     border-top-left-radius: 0.625em;
     border-top-right-radius: 0.625em;
   }
+
+  .castCard__name {
+    font-size: 0.7em;
+  }
+  .castCard__characterName {
+    font-size: 0.6em;
+    padding-left: 0.5em;
+    margin: 0;
+  }
 }
 
 @media (max-width: 320px) {
   .castCard {
-    width: 4em;
-    height: 7.3em;
+    width: 5em;
+    height: 7em;
     margin: 0.4em;
   }
 
   .castCard__image {
-    width: 4em;
+    width: 5em;
     border-top-left-radius: 0.625em;
     border-top-right-radius: 0.625em;
   }
@@ -59,7 +64,9 @@
   .castCard__name {
     font-size: 0.7em;
   }
-  .castCard__filmName {
-    font-size: 0.5em;
+  .castCard__characterName {
+    font-size: 0.6em;
+    padding-left: 1em;
+    margin: 0;
   }
 }

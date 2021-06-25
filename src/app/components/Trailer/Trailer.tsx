@@ -1,5 +1,7 @@
 import React from "react";
-import ReactPlayer from "react-player";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import YoutubePlayer from "react-youtube-player";
 
 type TrailerProps = {
   videoSrc: string;
@@ -7,14 +9,14 @@ type TrailerProps = {
 
 function Trailer({ videoSrc }: TrailerProps): JSX.Element {
   return (
-    <div className="player-wrapper">
-      <ReactPlayer
-        url={videoSrc}
-        className="react-player"
-        width="100%"
-        height="12em"
-      />
-    </div>
+    <YoutubePlayer
+      videoId={videoSrc}
+      playbackState="unstarted"
+      configuration={{
+        showinfo: 0,
+        controls: 0,
+      }}
+    />
   );
 }
 
