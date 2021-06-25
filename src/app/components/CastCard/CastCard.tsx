@@ -1,13 +1,13 @@
 import React from "react";
 import styles from "./CastCard.module.css";
 
-type MovieResult = {
+type CastCardProps = {
   imgSrc: string;
   name: string;
   character: string;
 };
 
-function CastCard({ imgSrc, name, character }: MovieResult): JSX.Element {
+function CastCard({ imgSrc, name, character }: CastCardProps): JSX.Element {
   return (
     <div className={styles.castCard}>
       <div>
