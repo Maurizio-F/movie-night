@@ -1,7 +1,8 @@
 .swipeGameElement {
   display: flex;
   justify-content: space-between;
-  width: 13em;
+  width: 12em;
+  margin: 0 auto;
 }
 
 .acceptButton {
@@ -16,4 +17,10 @@
   border-radius: 100%;
   padding: 1.3em;
   border: 0.06em solid var(--secondary-color);
+}
+
+@media (max-width: 375px) {
+  .footer {
+    max-height: 2em;
+  }
 }
