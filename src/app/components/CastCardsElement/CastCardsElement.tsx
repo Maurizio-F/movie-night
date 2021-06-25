@@ -4,7 +4,7 @@ import styles from "./CastCardsElement.module.css";
 
 type CastCardElement = {
   actors: Array<{
-    id: number;
+    id?: number;
     profilePath: string;
     name: string;
     character: string;

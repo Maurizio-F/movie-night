@@ -9,15 +9,18 @@ export default {
 const cast = [
   {
     profilePath: "./emmaStone.jpeg",
-    artistName: "Emma Stone",
+    name: "Emma Stone",
+    character: "Cruella",
   },
   {
     profilePath: "./emmaThompson.jpeg",
-    artistName: "Emma Thompson",
+    name: "Emma Thompson",
+    character: "The Baroness",
   },
   {
     profilePath: "./joelFry.jpeg",
-    artistName: "Joel Fry",
+    name: "Joel Fry",
+    character: "Jasper",
   },
 ];
 
