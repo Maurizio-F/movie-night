@@ -1,15 +1,11 @@
-import React from "react";
+import React, { ReactNode } from "react";
 
 type StreamingServiceProps = {
-  imgSrc: string;
+  imgSrc: ReactNode;
 };
 
 function StreamingService({ imgSrc }: StreamingServiceProps): JSX.Element {
-  return (
-    <div>
-      <img src={imgSrc} />
-    </div>
-  );
+  return <div>{imgSrc}</div>;
 }
 
 export default StreamingService;

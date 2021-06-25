@@ -59,12 +59,20 @@
 
 .castSection {
   display: flex;
-  margin: 2em 1em;
+  margin: 0.5em 1em;
   justify-content: center;
 }
 
 .availableStreaming {
-  padding-bottom: 3em;
+  padding-bottom: 5em;
+  width: 20em;
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: center;
+}
+
+.streamingService {
+  margin: 0.7em;
 }
 
 .footer {
