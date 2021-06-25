@@ -4,6 +4,13 @@
   gap: 0.9em;
   font-size: 1.2em;
   color: var(--text-color);
+  text-align: center;
+  max-width: min-content;
+  margin: 1em auto;
+}
+label:first-of-type {
+  gap: 1.2em;
+  margin-bottom: 0.8em;
 }
 
 .label__input {
@@ -13,7 +20,7 @@
 }
 
 .label__input::placeholder {
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
 
 .label__input:focus {

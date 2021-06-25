@@ -1,0 +1,37 @@
+.container {
+  display: grid;
+  margin: 0;
+  position: relative;
+  text-align: center;
+  margin-bottom: 4em;
+}
+
+.inputField {
+  margin: 1em auto;
+  text-align: center;
+}
+
+.genreHeadline {
+  font-size: 1.5em;
+  margin: 0.3em 0;
+}
+
+.genreField {
+  padding: 0.5em;
+  max-width: 20em;
+  margin: 2em auto;
+}
+
+.footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  margin: 0;
+  max-height: 2.4em;
+}
+
+@media (max-width: 375px) {
+  .genreField {
+    max-width: 20em;
+  }
+}

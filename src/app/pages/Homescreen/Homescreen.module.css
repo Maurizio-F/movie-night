@@ -16,7 +16,7 @@
   position: fixed;
   bottom: 0;
   width: 100%;
-  max-height: 25em;
+  max-height: 20em;
 }
 
 @media (max-width: 375px) {

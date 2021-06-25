@@ -8,7 +8,7 @@
   font-size: 1.5em;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   .button {
     font-size: 1em;
   }
