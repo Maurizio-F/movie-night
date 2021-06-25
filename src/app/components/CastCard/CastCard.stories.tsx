@@ -7,13 +7,21 @@ export default {
 };
 
 export const emmaStone = (): JSX.Element => (
-  <CastCard imgSrc="./emmaStone.jpeg" name="Emma Stone" />
+  <CastCard
+    imgSrc="./emmaStone.jpeg"
+    name="Emma Stone"
+    character="Estella / Cruella/"
+  />
 );
 
 export const emmaThompson = (): JSX.Element => (
-  <CastCard imgSrc="./emmaThompson.jpeg" name="Emma Thompson" />
+  <CastCard
+    imgSrc="./emmaThompson.jpeg"
+    name="Emma Thompson"
+    character="The Baroness"
+  />
 );
 
 export const joelFry = (): JSX.Element => (
-  <CastCard imgSrc="./joelFry.jpeg" name="Joel Fry" />
+  <CastCard imgSrc="./joelFry.jpeg" name="Joel Fry" character="Jasper" />
 );
