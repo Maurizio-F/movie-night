@@ -9,7 +9,8 @@ import { MovieResult } from "../../../server/movieDatabase";
 import netflix from "../../assets/netflix.png";
 
 function MovieDetails(): JSX.Element {
-  const movie = useFetch<MovieResult>("/api/movies/343611");
+  const movie = useFetch<MovieResult>("/api/movies/337404");
+
   console.log(movie);
 
   if (!movie) {
@@ -25,7 +26,7 @@ function MovieDetails(): JSX.Element {
         <div className={styles.filmInfo}>
           <h2 className={styles.filmName}>{movie.title}</h2>
           <span className={styles.genre}>{movie.genres}</span>
-          <span className={styles.runtime}>{movie.runtime}</span>
+          <span className={styles.runtime}>{movie.runtime} min</span>
         </div>
         <hr className={styles.border}></hr>
 

@@ -15,7 +15,7 @@ function CastCard({ imgSrc, name, character }: CastCardProps): JSX.Element {
       </div>
       <div className={styles.nameSection}>
         <h1 className={styles.castCard__name}>{name}</h1>
-        <h2 className={styles.castCard_characterName}>{character}</h2>
+        <h2 className={styles.castCard__characterName}>{character}</h2>
       </div>
     </div>
   );

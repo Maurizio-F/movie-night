@@ -1,6 +1,7 @@
 import fetch from "node-fetch";
 
 const { THE_MOVIE_DB_KEY } = process.env;
+const IMAGE_BASE_URL = "https://image.tmdb.org/t/p/original";
 
 if (!THE_MOVIE_DB_KEY) {
   throw new Error("process.env.THE_MOVIE_DB_KEY is missing");
@@ -25,14 +26,14 @@ export async function getMovie(id: string): Promise<MovieResult> {
     genres: fullMovie.genres.map((genre) => genre.name),
     id: fullMovie.id,
     overview: fullMovie.overview,
-    posterPath: fullMovie.poster_path,
+    posterPath: `${IMAGE_BASE_URL}${fullMovie.poster_path}`,
     runtime: fullMovie.runtime,
     title: fullMovie.title,
     video: fullMovie.videos.results.map((result) => result.key),
     actors: fullCast.cast.map((actor) => ({
       id: actor.id,
       name: actor.name,
-      profilePath: actor.profile_path,
+      profilePath: `${IMAGE_BASE_URL}${actor.profile_path}`,
       character: actor.character,
     })),
   };
