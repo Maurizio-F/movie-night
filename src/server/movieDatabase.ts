@@ -9,7 +9,7 @@ if (!THE_MOVIE_DB_KEY) {
 
 export async function fetchMovieApi(id: string): Promise<FetchResult> {
   const response = await fetch(
-    `https://api.themoviedb.org/3/movie/${id}?api_key=${THE_MOVIE_DB_KEY}&append_to_response=videos`
+    `https://api.themoviedb.org/3/movie/${id}?api_key=${THE_MOVIE_DB_KEY}&language=de&append_to_response=videos`
   );
   if (!response.ok) {
     throw new Error("ERROR");
