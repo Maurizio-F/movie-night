@@ -7,8 +7,11 @@ import styles from "./Zufallsgenerator.module.css";
 import useFetch from "../../hooks/useFetch";
 import { MovieResult } from "../../../server/movieDatabase";
 
+const random = Math.floor(Math.random() * 99999) + 1;
+console.log(random);
+
 function Zufallsgenerator(): JSX.Element {
-  const movie = useFetch<MovieResult>("/api/movies/337404");
+  const movie = useFetch<MovieResult>(`/api/movies/${random}`);
 
   if (!movie) {
     return <div>No Movie found</div>;
@@ -21,9 +24,11 @@ function Zufallsgenerator(): JSX.Element {
       </header>
       <main>
         <div className={styles.bigMovieCard}>
-          <BigMovieCard imgSrc={movie.posterPath} movieName={"Cruella"} />
+          <BigMovieCard imgSrc={movie.posterPath} movieName={movie.title} />
         </div>
-        <Button>Nächster Film</Button>
+        <div className={styles.button}>
+          <Button>Nächster Film</Button>
+        </div>
       </main>
       <footer className={styles.footer}>
         <Footer />

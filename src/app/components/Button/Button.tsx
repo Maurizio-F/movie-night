@@ -3,7 +3,7 @@ import styles from "./Button.module.css";
 
 type ButtonProps = {
   children: ReactNode;
-  onClick?: () => void | number;
+  onClick?: () => void;
 };
 
 function Button({ children, onClick }: ButtonProps): JSX.Element {
