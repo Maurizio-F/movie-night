@@ -9,9 +9,12 @@ import AvailableSectionIcon from "../../components/Icons/AvailableSectionIcon";
 import netflix from "../../assets/netflix.png";
 import amazonPrime from "../../assets/amazonPrime.png";
 import disney from "../../assets/disney.png";
+import BackButton from "../../components/BackButton/BackButton";
+import { useParams } from "react-router-dom";
 
 function MovieDetails(): JSX.Element {
-  const movie = useFetch<MovieResult>("/api/movies/337404");
+  const { id } = useParams<{ id: string }>();
+  const movie = useFetch<MovieResult>(`/api/movies/${id}`);
 
   if (!movie) {
     return <div>No Movie found</div>;
@@ -23,6 +26,7 @@ function MovieDetails(): JSX.Element {
         <div className={styles.trailer}>
           <Trailer videoSrc={movie.video[0]} />
         </div>
+        <BackButton />
         <div className={styles.filmInfo}>
           <h2 className={styles.filmName}>{movie.title}</h2>
           <span className={styles.genre}>{`${movie.genres}`}</span>

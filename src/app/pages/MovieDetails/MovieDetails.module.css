@@ -4,6 +4,7 @@
 
 .trailer {
   width: 100%;
+  height: 12.5em;
 }
 
 .border {
@@ -15,7 +16,7 @@
 .filmInfo {
   display: grid;
   grid-template-columns: 7em 7em;
-  padding: 1em 1em 1em;
+  padding: 0.5em 1em 1em;
   column-gap: 2em;
   margin: 0 auto;
   max-width: 18em;

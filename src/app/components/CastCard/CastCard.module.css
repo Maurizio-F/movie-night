@@ -1,7 +1,6 @@
 .castCard {
   width: 7em;
   height: min-content;
-  box-shadow: 1px 1px 13px 2px rgba(0, 0, 0, 0.31);
   border-radius: 0.625em;
   margin: 0 1em;
 }
@@ -10,6 +9,7 @@
   width: 7em;
   border-top-left-radius: 0.625em;
   border-top-right-radius: 0.625em;
+  box-shadow: 1px 1px 13px 2px rgba(0, 0, 0, 0.31);
 }
 
 .castCard__name {
@@ -28,8 +28,8 @@
 @media (max-width: 414px) {
   .castCard {
     width: 6em;
-    height: min-content;
-    margin: 1em 0.5em;
+    max-height: 25em;
+    margin: 0.1em 0.1em;
   }
 
   .castCard__image {

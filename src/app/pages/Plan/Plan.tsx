@@ -5,6 +5,7 @@ import GenreButton from "../../components/GenreButton/GenreButton";
 import Button from "../../components/Button/Button";
 import Footer from "../../components/Footer/Footer";
 import styles from "./Plan.module.css";
+import BackButton from "../../components/BackButton/BackButton";
 
 function Planen(): JSX.Element {
   return (
@@ -13,6 +14,9 @@ function Planen(): JSX.Element {
         <NavBar />
       </header>
       <main>
+        <div className={styles.backButton}>
+          <BackButton />
+        </div>
         <div className={styles.inputField}>
           <InputField
             label="Name"

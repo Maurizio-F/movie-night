@@ -1,10 +1,11 @@
-import React from "react";
+import React, { ReactEventHandler } from "react";
 import styles from "./CastCard.module.css";
 
 type CastCardProps = {
   imgSrc: string;
   name: string;
   character: string;
+  onError: ReactEventHandler;
 };
 
 function CastCard({ imgSrc, name, character }: CastCardProps): JSX.Element {
