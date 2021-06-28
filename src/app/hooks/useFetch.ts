@@ -1,6 +1,11 @@
 import { useEffect, useState } from "react";
 
-const useFetch = <T>(url: string): T | null => {
+const useFetch = <T>(
+  url: string
+): {
+  data: T | null;
+  reFetch: () => void;
+} => {
   const [data, setData] = useState<T | null>(null);
 
   const reFetch = async (): Promise<void> => {
