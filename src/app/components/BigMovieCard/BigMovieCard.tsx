@@ -1,4 +1,5 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 import ShowMoreLink from "../ShowMoreLink/ShowMoreLink";
 import styles from "./BigMovieCard.module.css";
 
@@ -8,6 +9,7 @@ type CardProps = {
 };
 
 function BigMovieCard({ imgSrc, movieName }: CardProps): JSX.Element {
+  const { id } = useParams<{ id: string }>();
   return (
     <div className={styles.movieCard}>
       <div className={styles.movieCard__container}>
@@ -18,7 +20,7 @@ function BigMovieCard({ imgSrc, movieName }: CardProps): JSX.Element {
         />
       </div>
       <h1 className={styles.movieCard__headline}>{movieName}</h1>
-      <ShowMoreLink link="/movies/337404" />
+      <ShowMoreLink link={`/movies/${id}`} />
     </div>
   );
 }
