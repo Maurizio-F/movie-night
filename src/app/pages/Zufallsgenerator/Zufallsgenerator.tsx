@@ -13,7 +13,7 @@ function generateRandomMovieId(): number {
 
 function Zufallsgenerator(): JSX.Element {
   const [movieId, setMovieId] = useState(generateRandomMovieId);
-  const movie = useFetch<MovieResult>(`/api/movies/${movieId}`);
+  const { data: movie } = useFetch<MovieResult>(`/api/movies/${movieId}`);
 
   if (!movie) {
     return <div>No Movie found</div>;
