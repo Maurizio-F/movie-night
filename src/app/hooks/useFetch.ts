@@ -9,9 +9,13 @@ const useFetch = <T>(
   const [data, setData] = useState<T | null>(null);
 
   const reFetch = async (): Promise<void> => {
-    const res = await fetch(url);
-    const json = await res.json();
-    setData(json);
+    try {
+      const res = await fetch(url);
+      const json = await res.json();
+      setData(json);
+    } catch (err) {
+      console.error("Invalid ID", err);
+    }
   };
 
   useEffect(() => {
