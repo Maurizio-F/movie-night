@@ -5,7 +5,7 @@ import styles from "./BigMovieCard.module.css";
 type CardProps = {
   imgSrc: string;
   movieName: string;
-  id: ReactNode;
+  id?: ReactNode;
 };
 
 function BigMovieCard({ imgSrc, movieName, id }: CardProps): JSX.Element {
