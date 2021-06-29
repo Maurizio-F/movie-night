@@ -7,6 +7,13 @@ import styles from "./SwipeGame.module.css";
 import TinderCard from "react-tinder-card";
 
 function SwipeGame(): JSX.Element {
+  const onSwipe = (direction: string) => {
+    console.log("You swiped: " + direction);
+  };
+
+  const onCardLeftScreen = (myIdentifier: string) => {
+    console.log(myIdentifier + " left the screen");
+  };
   return (
     <div className={styles.container}>
       <header>
