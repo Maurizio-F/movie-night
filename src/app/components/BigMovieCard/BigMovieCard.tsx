@@ -1,15 +1,14 @@
-import React from "react";
-import { useParams } from "react-router-dom";
+import React, { ReactNode } from "react";
 import ShowMoreLink from "../ShowMoreLink/ShowMoreLink";
 import styles from "./BigMovieCard.module.css";
 
 type CardProps = {
   imgSrc: string;
   movieName: string;
+  id: ReactNode;
 };
 
-function BigMovieCard({ imgSrc, movieName }: CardProps): JSX.Element {
-  const { id } = useParams<{ id: string }>();
+function BigMovieCard({ imgSrc, movieName, id }: CardProps): JSX.Element {
   return (
     <div className={styles.movieCard}>
       <div className={styles.movieCard__container}>

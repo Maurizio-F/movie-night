@@ -26,7 +26,11 @@ function Zufallsgenerator(): JSX.Element {
       </header>
       <main>
         <div className={styles.bigMovieCard}>
-          <BigMovieCard imgSrc={movie.posterPath} movieName={movie.title} />
+          <BigMovieCard
+            imgSrc={movie.posterPath}
+            movieName={movie.title}
+            id={movieId}
+          />
         </div>
         <div className={styles.button}>
           <Button onClick={() => setMovieId(generateRandomMovieId())}>
