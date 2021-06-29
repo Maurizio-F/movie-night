@@ -12,13 +12,8 @@ function BigMovieCard({ imgSrc, movieName }: CardProps): JSX.Element {
   return (
     <div className={styles.movieCard}>
       <div className={styles.movieCard__container}>
-        {/* <img
-          className={styles.movieCard__image}
-          src={imgSrc}
-          alt="Movie Poster"
-        /> */}
         <picture>
-          <source srcSet={imgSrc} className={styles.movieCard__image} />
+          <source srcSet={imgSrc} />
           <img
             src={defaultImage}
             alt="Image not found"
