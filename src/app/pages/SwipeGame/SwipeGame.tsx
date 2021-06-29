@@ -4,6 +4,7 @@ import BigMovieCard from "../../components/BigMovieCard/BigMovieCard";
 import SwipeGameButton from "../../components/SwipeGameButton/SwipeGameButton";
 import Footer from "../../components/Footer/Footer";
 import styles from "./SwipeGame.module.css";
+import TinderCard from "react-tinder-card";
 
 function SwipeGame(): JSX.Element {
   return (
@@ -12,7 +13,14 @@ function SwipeGame(): JSX.Element {
         <NavBar />
       </header>
       <main>
-        <BigMovieCard imgSrc="./cruella.jpeg" movieName="Cruella" />
+        <TinderCard
+          onSwipe={onSwipe}
+          onCardLeftScreen={() => onCardLeftScreen("fooBar")}
+          preventSwipe={["right", "left"]}
+        >
+          <BigMovieCard imgSrc="./cruella.jpeg" movieName="Cruella" />
+        </TinderCard>
+
         <div className={styles.swipeGameButton}>
           <SwipeGameButton />
         </div>
