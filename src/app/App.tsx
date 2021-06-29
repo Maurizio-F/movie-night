@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Homescreen from "./pages/Homescreen/Homescreen";
 import MovieDetails from "./pages/MovieDetails/MovieDetails";
 import Planen from "./pages/Plan/Plan";
+import SwipeGame from "./pages/SwipeGame/SwipeGame";
 import Zufallsgenerator from "./pages/Zufallsgenerator/Zufallsgenerator";
 
 function App(): JSX.Element {
@@ -20,6 +21,9 @@ function App(): JSX.Element {
         </Route>
         <Route exact path="/movies/:id">
           <MovieDetails />
+        </Route>
+        <Route exact path="/swipegame">
+          <SwipeGame />
         </Route>
       </Switch>
     </Router>
