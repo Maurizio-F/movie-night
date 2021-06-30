@@ -14,10 +14,7 @@ function ImageFallback({
   const [targetSrc, setTargetSrc] = useState(src);
 
   return (
-    <img>
-      {" "}
-      src={targetSrc} alt={alt} onError={() => setTargetSrc(fallback)}
-    </img>
+    <img src={targetSrc} alt={alt} onError={() => setTargetSrc(fallback)} />
   );
 }
 
