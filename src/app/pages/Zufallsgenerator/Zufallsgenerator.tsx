@@ -8,7 +8,7 @@ import useFetch from "../../hooks/useFetch";
 import { MovieResult } from "../../../server/movieDatabase";
 
 function generateRandomMovieId(): number {
-  return Math.floor(Math.random() * 99999) + 1;
+  return Math.floor(Math.random() * 50000) + 1;
 }
 
 function Zufallsgenerator(): JSX.Element {
@@ -16,7 +16,7 @@ function Zufallsgenerator(): JSX.Element {
   const { data: movie } = useFetch<MovieResult>(`/api/movies/${movieId}`);
 
   if (!movie) {
-    return <div>No Movie found</div>;
+    return <div></div>;
   }
 
   return (

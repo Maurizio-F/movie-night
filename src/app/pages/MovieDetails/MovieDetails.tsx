@@ -17,7 +17,7 @@ function MovieDetails(): JSX.Element {
   const { data: movie } = useFetch<MovieResult>(`/api/movies/${id}`);
 
   if (!movie) {
-    return <div>No Movie found</div>;
+    return <div></div>;
   }
 
   return (
