@@ -1,5 +1,7 @@
 import React from "react";
 import styles from "./CastCard.module.css";
+import defaultCastImage from "../../assets/defaultCast.png";
+import ImageFallback from "../ImageFallback/ImageFallback";
 
 type CastCardProps = {
   imgSrc: string;
@@ -11,7 +13,12 @@ function CastCard({ imgSrc, name, character }: CastCardProps): JSX.Element {
   return (
     <div className={styles.castCard}>
       <div>
-        <img className={styles.castCard__image} src={imgSrc} alt="" />
+        <ImageFallback
+          src={imgSrc}
+          alt="Cast"
+          fallback={defaultCastImage}
+          className={styles.castCard__image}
+        />
       </div>
       <div className={styles.nameSection}>
         <h1 className={styles.castCard__name}>{name}</h1>

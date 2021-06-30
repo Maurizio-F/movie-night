@@ -25,7 +25,7 @@
   padding-left: 0.3em;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 375px) {
   .castCard {
     width: 6em;
     max-height: 25em;
