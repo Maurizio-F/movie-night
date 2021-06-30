@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import NavBar from "../../components/NavBar/NavBar";
 import BigMovieCard from "../../components/BigMovieCard/BigMovieCard";
 import Button from "../../components/Button/Button";
@@ -7,8 +7,13 @@ import styles from "./Zufallsgenerator.module.css";
 import useFetch from "../../hooks/useFetch";
 import { MovieResult } from "../../../server/movieDatabase";
 
+function generateRandomMovieId(): number {
+  return Math.floor(Math.random() * 99999) + 1;
+}
+
 function Zufallsgenerator(): JSX.Element {
-  const movie = useFetch<MovieResult>("/api/movies/337404");
+  const [movieId, setMovieId] = useState(generateRandomMovieId);
+  const { data: movie } = useFetch<MovieResult>(`/api/movies/${movieId}`);
 
   if (!movie) {
     return <div>No Movie found</div>;
@@ -21,9 +26,17 @@ function Zufallsgenerator(): JSX.Element {
       </header>
       <main>
         <div className={styles.bigMovieCard}>
-          <BigMovieCard imgSrc={movie.posterPath} movieName={"Cruella"} />
+          <BigMovieCard
+            imgSrc={movie.posterPath}
+            movieName={movie.title}
+            id={movieId}
+          />
         </div>
-        <Button>Nächster Film</Button>
+        <div className={styles.button}>
+          <Button onClick={() => setMovieId(generateRandomMovieId())}>
+            Nächster Film
+          </Button>
+        </div>
       </main>
       <footer className={styles.footer}>
         <Footer />

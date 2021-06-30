@@ -14,7 +14,7 @@ import { useParams } from "react-router-dom";
 
 function MovieDetails(): JSX.Element {
   const { id } = useParams<{ id: string }>();
-  const movie = useFetch<MovieResult>(`/api/movies/${id}`);
+  const { data: movie } = useFetch<MovieResult>(`/api/movies/${id}`);
 
   if (!movie) {
     return <div>No Movie found</div>;

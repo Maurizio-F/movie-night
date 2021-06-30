@@ -1,13 +1,14 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import ShowMoreLink from "../ShowMoreLink/ShowMoreLink";
 import styles from "./BigMovieCard.module.css";
 
 type CardProps = {
   imgSrc: string;
   movieName: string;
+  id?: ReactNode;
 };
 
-function BigMovieCard({ imgSrc, movieName }: CardProps): JSX.Element {
+function BigMovieCard({ imgSrc, movieName, id }: CardProps): JSX.Element {
   return (
     <div className={styles.movieCard}>
       <div className={styles.movieCard__container}>
@@ -18,7 +19,7 @@ function BigMovieCard({ imgSrc, movieName }: CardProps): JSX.Element {
         />
       </div>
       <h1 className={styles.movieCard__headline}>{movieName}</h1>
-      <ShowMoreLink link="/movies/337404" />
+      <ShowMoreLink link={`/movies/${id}`} />
     </div>
   );
 }

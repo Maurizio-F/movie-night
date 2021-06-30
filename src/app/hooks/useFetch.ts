@@ -1,16 +1,28 @@
 import { useEffect, useState } from "react";
 
-const useFetch = <T>(url: string): T | null => {
+const useFetch = <T>(
+  url: string
+): {
+  data: T | null;
+  reFetch: () => void;
+} => {
   const [data, setData] = useState<T | null>(null);
-  useEffect(() => {
-    const fetchData = async () => {
+
+  const reFetch = async (): Promise<void> => {
+    try {
       const res = await fetch(url);
       const json = await res.json();
       setData(json);
-    };
-    fetchData();
-  }, []);
-  return data;
+    } catch (err) {
+      console.error("Invalid ID", err);
+    }
+  };
+
+  useEffect(() => {
+    reFetch();
+  }, [url]);
+
+  return { data, reFetch };
 };
 
 export default useFetch;
