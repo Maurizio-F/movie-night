@@ -3,6 +3,22 @@ import { fetchCreditsApi, fetchMovieApi, getMovie } from "./movieDatabase";
 
 const router = express.Router();
 
+function generateRandomMovieId(): number {
+  return Math.floor(Math.random() * 50000) + 1;
+}
+router.get("/movies/random", async (_req, res) => {
+  let movie;
+  while (!movie) {
+    const id = generateRandomMovieId();
+    try {
+      movie = await getMovie(id.toString());
+    } catch (error) {
+      console.warn(`Couldn't find ${id}`);
+    }
+  }
+  res.status(200).json(movie);
+});
+
 // All data
 router.get("/moviedata/:id", async (req, res, next) => {
   try {

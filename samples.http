@@ -10,3 +10,6 @@ GET {{baseUrl}}/api/actors/343611
 
 ### Movie
 GET {{baseUrl}}/api/movies/343611 
+
+### Random Movie
+GET {{baseUrl}}/api/movies/random
