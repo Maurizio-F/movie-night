@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 type ImageFallbackProps = {
   src: string;
@@ -14,6 +14,10 @@ function ImageFallback({
   className,
 }: ImageFallbackProps): JSX.Element {
   const [targetSrc, setTargetSrc] = useState(src);
+
+  useEffect(() => {
+    setTargetSrc(src);
+  }, [src]);
 
   return (
     <img

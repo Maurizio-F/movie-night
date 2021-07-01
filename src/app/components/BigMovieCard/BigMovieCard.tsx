@@ -16,7 +16,7 @@ function BigMovieCard({ imgSrc, movieName, id }: CardProps): JSX.Element {
       <div className={styles.movieCard__container}>
         <ImageFallback
           src={imgSrc}
-          alt="Cast"
+          alt="Movie Poster"
           fallback={defaultImage}
           className={styles.movieCard__image}
         />
