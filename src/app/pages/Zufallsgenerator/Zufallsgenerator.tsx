@@ -7,7 +7,7 @@ import styles from "./Zufallsgenerator.module.css";
 import useFetch from "../../hooks/useFetch";
 import { MovieResult } from "../../../server/movieDatabase";
 
-function generateRandomMovieId(): number {
+export function generateRandomMovieId(): number {
   return Math.floor(Math.random() * 50000) + 1;
 }
 
