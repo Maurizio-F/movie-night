@@ -4,7 +4,7 @@ import { fetchCreditsApi, fetchMovieApi, getMovie } from "./movieDatabase";
 const router = express.Router();
 
 function generateRandomMovieId(): number {
-  return Math.floor(Math.random() * 50000) + 1;
+  return Math.floor(Math.random() * 99999) + 1;
 }
 router.get("/movies/random", async (_req, res) => {
   let movie;
