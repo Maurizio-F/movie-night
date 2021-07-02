@@ -2,9 +2,10 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Homescreen from "./pages/Homescreen/Homescreen";
 import MovieDetails from "./pages/MovieDetails/MovieDetails";
+import Overview from "./pages/Overview/Overview";
 import Planen from "./pages/Plan/Plan";
 import SwipeGame from "./pages/SwipeGame/SwipeGame";
-import Zufallsgenerator from "./pages/Zufallsgenerator/Zufallsgenerator";
+import Randomizer from "./pages/Zufallsgenerator/Randomizer";
 
 function App(): JSX.Element {
   return (
@@ -17,13 +18,16 @@ function App(): JSX.Element {
           <Planen />
         </Route>
         <Route exact path="/zufallsgenerator">
-          <Zufallsgenerator />
+          <Randomizer />
         </Route>
         <Route exact path="/movies/:id">
           <MovieDetails />
         </Route>
         <Route exact path="/swipegame">
           <SwipeGame />
+        </Route>
+        <Route exact path="/uebersicht">
+          <Overview />
         </Route>
       </Switch>
     </Router>
