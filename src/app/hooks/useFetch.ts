@@ -14,7 +14,7 @@ const useFetch = <T>(
       const json = await res.json();
       setData(json);
     } catch (err) {
-      window.location.replace("http://localhost:3000/zufallsgenerator");
+      console.log("Fetch don´t work");
     }
   };
 
