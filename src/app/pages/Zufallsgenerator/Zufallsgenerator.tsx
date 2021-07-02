@@ -7,12 +7,12 @@ import styles from "./Zufallsgenerator.module.css";
 import useFetch from "../../hooks/useFetch";
 import { MovieResult } from "../../../server/movieDatabase";
 
-export function generateRandomMovieId(): number {
-  return Math.floor(Math.random() * 50000) + 1;
+export function generateRandomMovieId(max: number, min: number): number {
+  return Math.floor(Math.random() * (max - min) + min);
 }
 
 function Zufallsgenerator(): JSX.Element {
-  const [movieId, setMovieId] = useState(generateRandomMovieId);
+  const [movieId, setMovieId] = useState(generateRandomMovieId(30000, 65000));
   const { data: movie } = useFetch<MovieResult>(`/api/movies/${movieId}`);
 
   if (!movie) {
@@ -33,7 +33,9 @@ function Zufallsgenerator(): JSX.Element {
           />
         </div>
         <div className={styles.button}>
-          <Button onClick={() => setMovieId(generateRandomMovieId())}>
+          <Button
+            onClick={() => setMovieId(generateRandomMovieId(30000, 65000))}
+          >
             Nächster Film
           </Button>
         </div>
