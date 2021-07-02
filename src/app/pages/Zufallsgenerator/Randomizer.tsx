@@ -3,11 +3,11 @@ import NavBar from "../../components/NavBar/NavBar";
 import BigMovieCard from "../../components/BigMovieCard/BigMovieCard";
 import Button from "../../components/Button/Button";
 import Footer from "../../components/Footer/Footer";
-import styles from "./Zufallsgenerator.module.css";
+import styles from "./Randomizer.module.css";
 import useFetch from "../../hooks/useFetch";
 import { MovieResult } from "../../../server/movieDatabase";
 
-function Zufallsgenerator(): JSX.Element {
+function Randomizer(): JSX.Element {
   const { data: movie, reFetch } = useFetch<MovieResult>(`/api/movies/random`);
 
   if (!movie) {
@@ -38,4 +38,4 @@ function Zufallsgenerator(): JSX.Element {
   );
 }
 
-export default Zufallsgenerator;
+export default Randomizer;

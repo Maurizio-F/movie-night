@@ -11,8 +11,8 @@ function Homescreen(): JSX.Element {
         <img className={styles.logo} src={logo} alt="" />
       </main>
       <div className={styles.bottom}>
-        <HomescreenLink text={"Planen"} link={"/planen"} />
-        <HomescreenLink text={"Zufallsgenerator"} link={"/zufallsgenerator"} />
+        <HomescreenLink text="Planen" link={"/planen"} />
+        <HomescreenLink text="Zufallsgenerator" link={"/zufallsgenerator"} />
         <HomescreenElement />
       </div>
     </div>
