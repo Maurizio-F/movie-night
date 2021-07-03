@@ -2,7 +2,7 @@ import React from "react";
 import NavBar from "../../components/NavBar/NavBar";
 import BigMovieCard from "../../components/BigMovieCard/BigMovieCard";
 import Button from "../../components/Button/Button";
-import Footer from "../../components/Footer/Footer";
+import BottomElement from "../../components/BottomElement/BottomElement";
 import styles from "./Randomizer.module.css";
 import useFetch from "../../hooks/useFetch";
 import { MovieResult } from "../../../server/movieDatabase";
@@ -32,7 +32,7 @@ function Randomizer(): JSX.Element {
         </div>
       </main>
       <footer className={styles.footer}>
-        <Footer />
+        <BottomElement />
       </footer>
     </div>
   );

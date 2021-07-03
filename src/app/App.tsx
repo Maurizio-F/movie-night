@@ -5,7 +5,7 @@ import MovieDetails from "./pages/MovieDetails/MovieDetails";
 import Overview from "./pages/Overview/Overview";
 import Planen from "./pages/Plan/Plan";
 import SwipeGame from "./pages/SwipeGame/SwipeGame";
-import Randomizer from "./pages/Zufallsgenerator/Randomizer";
+import Randomizer from "./pages/Randomizer/Randomizer";
 
 function App(): JSX.Element {
   return (
