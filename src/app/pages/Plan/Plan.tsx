@@ -3,7 +3,7 @@ import NavBar from "../../components/NavBar/NavBar";
 import InputField from "../../components/InputField/InputField";
 import GenreButton from "../../components/GenreButton/GenreButton";
 import Button from "../../components/Button/Button";
-import Footer from "../../components/Footer/Footer";
+import BottomElement from "../../components/BottomElement/BottomElement";
 import styles from "./Plan.module.css";
 import BackButton from "../../components/BackButton/BackButton";
 
@@ -53,7 +53,7 @@ function Planen(): JSX.Element {
         <Button>Zur Filmauswahl</Button>
       </main>
       <footer className={styles.footer}>
-        <Footer />
+        <BottomElement />
       </footer>
     </div>
   );

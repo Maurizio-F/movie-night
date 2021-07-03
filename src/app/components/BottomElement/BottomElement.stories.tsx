@@ -1,12 +1,12 @@
 import React from "react";
 
-import Footer from "./Footer";
+import BottomElement from "./BottomElement";
 
 export default {
   title: "Component/Footer",
-  component: Footer,
+  component: BottomElement,
 };
 
 export const FooterComponent = (): JSX.Element => {
-  return <Footer></Footer>;
+  return <BottomElement></BottomElement>;
 };

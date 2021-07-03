@@ -3,7 +3,7 @@ import NavBar from "../../components/NavBar/NavBar";
 import BackButton from "../../components/BackButton/BackButton";
 import SmallMovieCard from "../../components/SmallMovieCard/SmallMovieCard";
 import Button from "../../components/Button/Button";
-import Footer from "../../components/Footer/Footer";
+import BottomElement from "../../components/BottomElement/BottomElement";
 import styles from "./MovieSelection.module.css";
 
 function MovieSelection(): JSX.Element {
@@ -41,7 +41,7 @@ function MovieSelection(): JSX.Element {
         </div>
       </main>
       <footer className={styles.footer}>
-        <Footer />
+        <BottomElement />
       </footer>
     </div>
   );

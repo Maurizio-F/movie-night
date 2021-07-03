@@ -2,7 +2,7 @@ import React from "react";
 import NavBar from "../../components/NavBar/NavBar";
 import BackButton from "../../components/BackButton/BackButton";
 import ListElement from "../../components/ListElement/ListElement";
-import Footer from "../../components/Footer/Footer";
+import BottomElement from "../../components/BottomElement/BottomElement";
 import ShareIcon from "../../components/Icons/ShareIcon";
 import DeleteIcon from "../../components/Icons/DeleteIcon";
 import styles from "./Overview.module.css";
@@ -41,7 +41,7 @@ function Overview(): JSX.Element {
         </div>
       </main>
       <footer className={styles.footer}>
-        <Footer />
+        <BottomElement />
       </footer>
     </div>
   );

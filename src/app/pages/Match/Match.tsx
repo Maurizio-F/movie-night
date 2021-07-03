@@ -3,7 +3,7 @@ import NavBar from "../../components/NavBar/NavBar";
 import BackButton from "../../components/BackButton/BackButton";
 import BigMovieCard from "../../components/BigMovieCard/BigMovieCard";
 import Button from "../../components/Button/Button";
-import Footer from "../../components/Footer/Footer";
+import BottomElement from "../../components/BottomElement/BottomElement";
 import styles from "./Match.module.css";
 
 function MatchPage(): JSX.Element {
@@ -21,7 +21,7 @@ function MatchPage(): JSX.Element {
         </div>
       </main>
       <footer className={styles.footer}>
-        <Footer />
+        <BottomElement />
       </footer>
     </div>
   );

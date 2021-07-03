@@ -1,7 +1,7 @@
 import React from "react";
 import Trailer from "../../components/Trailer/Trailer";
 import CastCardElement from "../../components/CastCardsElement/CastCardsElement";
-import Footer from "../../components/Footer/Footer";
+import BottomElement from "../../components/BottomElement/BottomElement";
 import styles from "./MovieDetails.module.css";
 import useFetch from "../../hooks/useFetch";
 import { MovieResult } from "../../../server/movieDatabase";
@@ -53,7 +53,7 @@ function MovieDetails(): JSX.Element {
         </div>
       </main>
       <footer className={styles.footer}>
-        <Footer />
+        <BottomElement />
       </footer>
     </div>
   );

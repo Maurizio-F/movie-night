@@ -2,7 +2,7 @@ import React from "react";
 import NavBar from "../../components/NavBar/NavBar";
 import BigMovieCard from "../../components/BigMovieCard/BigMovieCard";
 import SwipeGameButton from "../../components/SwipeGameButton/SwipeGameButton";
-import Footer from "../../components/Footer/Footer";
+import BottomElement from "../../components/BottomElement/BottomElement";
 import styles from "./SwipeGame.module.css";
 import TinderCard from "react-tinder-card";
 import useFetch from "../../hooks/useFetch";
@@ -44,7 +44,7 @@ function SwipeGame(): JSX.Element {
         </div>
       </main>
       <footer className={styles.footer}>
-        <Footer />
+        <BottomElement />
       </footer>
     </div>
   );

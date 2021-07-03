@@ -1,6 +1,6 @@
 import React from "react";
 
-function Footer(): JSX.Element {
+function BottomElement(): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 428 44">
       <path
@@ -17,4 +17,4 @@ function Footer(): JSX.Element {
   );
 }
 
-export default Footer;
+export default BottomElement;
