@@ -83,40 +83,13 @@
   max-height: 2.4em;
 }
 
-@media (max-width: 414px) {
-  .trailer {
-    width: 100%;
-  }
-
-  .filmText {
-    max-width: 20em;
-  }
-
-  .filmName {
-    font-size: 1em;
-    margin: 0;
-  }
-
-  .genre {
-    display: block;
-    font-size: 0.7em;
-    align-items: baseline;
-  }
-
-  .runtime {
-    display: block;
-    font-size: 0.7em;
-    grid-column: 2/3;
-  }
-
-  .footer {
-    max-height: 2.4em;
-  }
-}
-
 @media (max-width: 375px) {
   .trailer {
     width: 100%;
+  }
+
+  .filmInfo {
+    column-gap: 0.3em;
   }
 
   .filmText {
@@ -148,5 +121,52 @@
 
   .footer {
     max-height: 2.4em;
+  }
+}
+
+@media (max-width: 320px) {
+  .trailer {
+    width: 100%;
+  }
+
+  .filmText {
+    max-width: 20em;
+  }
+
+  .filmName {
+    font-size: 1em;
+    margin: 0;
+    padding-left: 1em;
+  }
+
+  .genre {
+    display: block;
+    font-size: 0.7em;
+    align-items: baseline;
+  }
+
+  .runtime {
+    display: block;
+    font-size: 0.7em;
+    grid-column: 2/3;
+  }
+
+  .border {
+    width: 15em;
+  }
+
+  .footer {
+    max-height: 2em;
+  }
+
+  .castSection {
+    display: flex;
+    margin: 0.5em 1em;
+    justify-content: center;
+    max-width: 17em;
+  }
+
+  .filmInfo {
+    column-gap: 0.3em;
   }
 }

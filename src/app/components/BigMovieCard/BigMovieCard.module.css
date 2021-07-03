@@ -42,3 +42,25 @@
     font-size: 0.9em;
   }
 }
+
+@media (max-width: 320px) {
+  .movieCard {
+    width: 12em;
+    height: min-content;
+    border-radius: 0.625em;
+    margin: 2em auto;
+    text-align: center;
+  }
+  .movieCard__image {
+    height: 15em;
+    width: auto;
+    border-radius: 0.625em;
+  }
+
+  .movieCard__headline {
+    padding-bottom: 0.7em;
+    margin: 0.3em auto 0.3em;
+    max-width: 19em;
+    font-size: 0.9em;
+  }
+}
