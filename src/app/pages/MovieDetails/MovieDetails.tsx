@@ -24,7 +24,7 @@ function MovieDetails(): JSX.Element {
     <div className={styles.container}>
       <main>
         <div className={styles.trailer}>
-          <Trailer videoSrc={movie.video[0 || 1 || 2 || 3 || 4]} />
+          <Trailer videoSrc={movie.video[0]} />
         </div>
         <BackButton />
         <div className={styles.filmInfo}>
