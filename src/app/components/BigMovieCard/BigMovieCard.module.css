@@ -23,22 +23,22 @@
 
 @media (max-width: 375px) {
   .movieCard {
-    width: 15em;
+    width: 17em;
     height: min-content;
     border-radius: 0.625em;
     margin: 2em auto;
     text-align: center;
   }
   .movieCard__image {
-    height: 17em;
+    height: 20em;
     width: auto;
     border-radius: 0.625em;
   }
 
   .movieCard__headline {
     padding-bottom: 0.7em;
-    margin: 0.5em auto 0.4em;
-    max-width: 12em;
-    font-size: 1em;
+    margin: 0.3em auto 0.3em;
+    max-width: 19em;
+    font-size: 0.9em;
   }
 }
