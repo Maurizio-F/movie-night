@@ -44,6 +44,13 @@ Builds the app for production to the dist folder. It correctly bundles React in 
 The build is minified and the filenames include the hashes.
 Your app is ready to be deployed.
 
+The project requires an .env file with the following content:
+
+```
+THE_MOVIE_DB_KEY=
+PORT=
+```
+
 ## Developing
 
 ### Built With
