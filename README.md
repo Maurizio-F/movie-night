@@ -24,14 +24,14 @@ npm start
 Runs the server in production mode and serve production bundle from npm run build
 
 ```shell
-npm run dev:client
+npm run client:dev
 ```
 
 Runs the app in development mode. Open http://localhost:3000 (default PORT) to view it in the browser.
 The page will automatically reload if you make changes to the code. You will see the build errors and lint warnings in the console.
 
 ```shell
-npm run dev:server
+npm run server:dev
 ```
 
 Runs the server in development mode.
