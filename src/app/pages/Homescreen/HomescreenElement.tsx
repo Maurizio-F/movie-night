@@ -2,7 +2,11 @@ import React from "react";
 
 function HomescreenElement(): JSX.Element {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 428 310.982">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="500px"
+      viewBox="0 0 428 310.982"
+    >
       <g data-name="Pfad 41" fill="var(--primary-bg-color)">
         <path
           d="M 427.5 310.4823913574219 L 0.5 310.4823913574219 L 0.5 0.5576571226119995 L 427.5 47.24946594238281 L 427.5 310.4823913574219 Z"
