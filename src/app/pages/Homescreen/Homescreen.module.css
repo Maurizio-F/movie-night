@@ -7,20 +7,17 @@
   text-align: center;
 }
 
-.homescreenElement {
-  width: 10em;
-}
-
 .logo {
   width: 80%;
-  padding-top: 8em;
+  padding-top: 6em;
+  margin-bottom: 5em;
 }
 
 .bottom {
   position: fixed;
   bottom: 0;
-  width: 100%;
-  max-height: 22em;
+  width: 10em;
+  max-height: 10em;
 }
 
 @media (max-width: 375px) {
