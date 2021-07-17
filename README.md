@@ -50,6 +50,7 @@ The project requires an .env file with the following content:
 THE_MOVIE_DB_KEY=
 PORT=
 ```
+
 The API key can be generated here after logging in: [themoviedb.org](https://www.themoviedb.org/) <br />
 You can choose the port yourself.
 
