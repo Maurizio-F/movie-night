@@ -1,8 +1,8 @@
 .movieCard {
   width: 19em;
-  height: 35em;
+  height: 32em;
   border-radius: 0.625em;
-  margin: 5em auto;
+  margin: 2em auto;
   text-align: center;
   padding-top: 1em;
   box-shadow: 2px -2px 39px 2px rgba(0, 0, 0, 0.31);
@@ -17,8 +17,8 @@
 .movieCard__headline {
   margin: 0;
   margin-bottom: 0.7em;
-  padding: 0 0.5em;
-  font-size: 1.7em;
+  padding: 1em 0.5em;
+  font-size: 1em;
 }
 
 @media (max-width: 375px) {
