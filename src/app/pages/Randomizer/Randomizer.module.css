@@ -6,11 +6,11 @@
 }
 
 .footer {
-  width: 100%;
+  width: 10em;
   position: fixed;
   bottom: 0;
   margin: 0;
-  max-height: 2.4em;
+  max-height: 3em;
 }
 
 @media (max-width: 320px) {

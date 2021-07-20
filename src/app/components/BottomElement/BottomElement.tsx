@@ -2,7 +2,7 @@ import React from "react";
 
 function BottomElement(): JSX.Element {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 428 44">
+    <svg xmlns="http://www.w3.org/2000/svg" width="500px" viewBox="0 0 428 44">
       <path
         d="M0,0,135.745,15.814,327,42H0Z"
         transform="translate(0 2)"
