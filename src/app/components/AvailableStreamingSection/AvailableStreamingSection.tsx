@@ -1,28 +1,24 @@
 import React from "react";
-import AvailableSectionIcon from "../Icons/AvailableSectionIcon";
-import StreamingService from "../StreamingService/StreamingService";
+import AvailableStreaming from "../AvailableStreaming/AvailableStreaming";
+
 import styles from "./AvailableStreamingSection.module.css";
 
-export type AvailableProps = {
-  availableStreaming: {
+type AvailableProps = {
+  streaming: {
+    id: number;
     streamingPath: string;
   }[];
 };
 
-function AvailableStreamingSection({
-  availableStreaming,
-}: AvailableProps): JSX.Element {
+function AvailableStreamingSection({ streaming }: AvailableProps): JSX.Element {
   return (
-    <div className={styles.streamingSection}>
-      <AvailableSectionIcon />
-      <div className={styles.streamingSection__image}>
-        {availableStreaming.map((streaming) => (
-          <StreamingService
-            key={streaming.streamingPath}
-            imgSrc={streaming.streamingPath}
-          />
-        ))}
-      </div>
+    <div className={styles.streamingSection__image}>
+      {streaming.map((streaming) => (
+        <AvailableStreaming
+          key={streaming.id}
+          imgSrc={streaming.streamingPath}
+        />
+      ))}
     </div>
   );
 }

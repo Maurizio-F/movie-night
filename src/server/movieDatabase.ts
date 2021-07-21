@@ -63,11 +63,11 @@ export async function getMovie(id: string): Promise<MovieResult> {
     })),
     flatrateProvider: fullProvider.results.AR.flatrate.map((flatrate) => ({
       id: flatrate.provider_id,
-      providerPath: flatrate.logo_path,
+      streamingPath: `${IMAGE_BASE_URL}${flatrate.logo_path}`,
     })),
     rentProvider: fullProvider.results.AR.rent.map((rent) => ({
       id: rent.provider_id,
-      providerPath: rent.logo_path,
+      streamingPath: `${IMAGE_BASE_URL}${rent.logo_path}`,
     })),
   };
   return movie;
@@ -196,11 +196,11 @@ export type MovieResult = {
   }[];
   flatrateProvider: {
     id: number;
-    providerPath: string;
+    streamingPath: string;
   }[];
   rentProvider: {
     id: number;
-    providerPath: string;
+    streamingPath: string;
   }[];
   video: string[];
 };
