@@ -10,20 +10,20 @@
 .border {
   border: 1px solid var(--tertiary-color);
   text-align: center;
-  width: 20em;
+  width: 25em;
 }
 
 .filmInfo {
   display: grid;
   grid-template-columns: 7em 7em;
   padding: 0.5em 1em 1em;
-  column-gap: 2em;
+  column-gap: 4em;
   margin: 0 auto;
   max-width: 18em;
 }
 
 .filmName {
-  font-size: 1.5em;
+  font-size: 1em;
   margin: 0;
   grid-row: 1/3;
 }
@@ -42,7 +42,7 @@
 .filmText {
   padding: 0 3em;
   text-align: left;
-  max-width: 20em;
+  max-width: 30em;
   height: 10em;
   margin: 0 auto;
   overflow: scroll;
@@ -59,7 +59,7 @@
 
 .castSection {
   display: flex;
-  margin: 0.5em 1em;
+  margin: 0.5em 0.3em;
   justify-content: center;
 }
 
@@ -80,7 +80,7 @@
   position: fixed;
   bottom: 0;
   margin: 0;
-  max-height: 2.4em;
+  max-height: 3em;
 }
 
 @media (max-width: 375px) {
@@ -89,11 +89,12 @@
   }
 
   .filmInfo {
-    column-gap: 0.3em;
+    column-gap: 3em;
   }
 
   .filmText {
     max-width: 22em;
+    max-height: 7em;
   }
 
   .border {
@@ -119,8 +120,15 @@
     grid-column: 2/3;
   }
 
-  .footer {
-    max-height: 2.4em;
+  @media (max-width: 375px) {
+    .footer {
+      height: 2.7em;
+    }
+
+    .footer svg {
+      height: 3em;
+      width: 100vw;
+    }
   }
 }
 

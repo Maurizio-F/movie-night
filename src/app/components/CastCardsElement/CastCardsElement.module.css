@@ -1,7 +1,7 @@
 .castCards {
   display: grid;
-  column-gap: 1em;
-  width: 20em;
+  column-gap: 0.3em;
+  width: 28em;
   height: max-content;
   grid-auto-flow: column;
   overflow: scroll;
@@ -9,4 +9,16 @@
 
 .castCards::-webkit-scrollbar {
   display: none;
+}
+
+@media (max-width: 375px) {
+  .castCards {
+    width: 21em;
+  }
+}
+
+@media (max-width: 320px) {
+  .castCards {
+    width: 21em;
+  }
 }
