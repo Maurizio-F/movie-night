@@ -5,7 +5,7 @@ import styles from "./AvailableStreamingSection.module.css";
 
 type AvailableProps = {
   streaming: {
-    id: number;
+    id?: number;
     streamingPath: string;
   }[];
 };
