@@ -43,9 +43,7 @@ function MovieDetails(): JSX.Element {
           <div>
             <AvailableSectionIcon />
           </div>
-          <AvailableStreamingSection
-            streaming={movie.flatrateProvider && movie.rentProvider}
-          />
+          <AvailableStreamingSection streaming={movie.buyProvider} />
         </div>
       </main>
       <footer className={styles.footer}>

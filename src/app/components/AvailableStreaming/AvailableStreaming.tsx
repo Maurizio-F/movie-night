@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./AvailableStreaming.module.css";
 
 type AvailableStreamingProps = {
   imgSrc: string;
@@ -7,7 +8,7 @@ type AvailableStreamingProps = {
 function availableStreaming({ imgSrc }: AvailableStreamingProps): JSX.Element {
   return (
     <div>
-      <img src={imgSrc} />
+      <img className={styles.providerImage} src={imgSrc} />
     </div>
   );
 }

@@ -61,11 +61,11 @@ export async function getMovie(id: string): Promise<MovieResult> {
       profilePath: `${IMAGE_BASE_URL}${actor.profile_path}`,
       character: actor.character,
     })),
-    flatrateProvider: fullProvider.results.AR.flatrate.map((flatrate) => ({
-      id: flatrate.provider_id,
-      streamingPath: `${IMAGE_BASE_URL}${flatrate.logo_path}`,
+    buyProvider: fullProvider.results.DE.buy.map((buy) => ({
+      id: buy.provider_id,
+      streamingPath: `${IMAGE_BASE_URL}${buy.logo_path}`,
     })),
-    rentProvider: fullProvider.results.AR.rent.map((rent) => ({
+    rentProvider: fullProvider.results.DE.rent.map((rent) => ({
       id: rent.provider_id,
       streamingPath: `${IMAGE_BASE_URL}${rent.logo_path}`,
     })),
@@ -167,9 +167,9 @@ type FetchCreditsResult = {
 type FetchProviderResult = {
   id: number;
   results: {
-    AR: {
+    DE: {
       link: string;
-      flatrate: {
+      buy: {
         logo_path: string;
         provider_id: number;
       }[];
@@ -194,7 +194,7 @@ export type MovieResult = {
     profilePath: string;
     character: string;
   }[];
-  flatrateProvider: {
+  buyProvider: {
     id: number;
     streamingPath: string;
   }[];
