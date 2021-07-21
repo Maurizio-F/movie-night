@@ -63,11 +63,11 @@ export async function getMovie(id: string): Promise<MovieResult> {
     })),
     flatrateProvider: fullProvider.results.AR.flatrate.map((flatrate) => ({
       id: flatrate.provider_id,
-      providersPath: flatrate.logo_path,
+      providerPath: flatrate.logo_path,
     })),
     rentProvider: fullProvider.results.AR.rent.map((rent) => ({
       id: rent.provider_id,
-      providersPath: rent.logo_path,
+      providerPath: rent.logo_path,
     })),
   };
   return movie;
@@ -196,11 +196,11 @@ export type MovieResult = {
   }[];
   flatrateProvider: {
     id: number;
-    providersPath: string;
+    providerPath: string;
   }[];
   rentProvider: {
     id: number;
-    providersPath: string;
+    providerPath: string;
   }[];
   video: string[];
 };

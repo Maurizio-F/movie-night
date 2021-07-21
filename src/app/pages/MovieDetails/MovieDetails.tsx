@@ -5,10 +5,8 @@ import BottomElement from "../../components/BottomElement/BottomElement";
 import styles from "./MovieDetails.module.css";
 import useFetch from "../../hooks/useFetch";
 import { MovieResult } from "../../../server/movieDatabase";
+import AvailableStreamingSection from "../../components/AvailableStreamingSection/AvailableStreamingSection";
 import AvailableSectionIcon from "../../components/Icons/AvailableSectionIcon";
-import netflix from "../../assets/netflix.png";
-import amazonPrime from "../../assets/amazonPrime.png";
-import disney from "../../assets/disney.png";
 import BackButton from "../../components/BackButton/BackButton";
 import { useParams } from "react-router-dom";
 
@@ -43,12 +41,7 @@ function MovieDetails(): JSX.Element {
         </div>
         <div className={styles.availableStreaming}>
           <div>
-            <AvailableSectionIcon />
-            <div>
-              <img className={styles.streamingService} src={netflix}></img>
-              <img className={styles.streamingService} src={amazonPrime}></img>
-              <img className={styles.streamingService} src={disney}></img>
-            </div>
+            <AvailableStreamingSection provider={} />
           </div>
         </div>
       </main>
