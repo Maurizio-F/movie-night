@@ -1,14 +1,15 @@
 import React from "react";
+import { useParams } from "react-router-dom";
+
+import useFetch from "../../hooks/useFetch";
+import { MovieResult } from "../../../server/movieDatabase";
 import Trailer from "../../components/Trailer/Trailer";
 import CastCardElement from "../../components/CastCardsElement/CastCardsElement";
 import BottomElement from "../../components/BottomElement/BottomElement";
-import styles from "./MovieDetails.module.css";
-import useFetch from "../../hooks/useFetch";
-import { MovieResult } from "../../../server/movieDatabase";
 import AvailableStreamingSection from "../../components/AvailableStreamingSection/AvailableStreamingSection";
 import AvailableSectionIcon from "../../components/Icons/AvailableSectionIcon";
 import BackButton from "../../components/BackButton/BackButton";
-import { useParams } from "react-router-dom";
+import styles from "./MovieDetails.module.css";
 
 function MovieDetails(): JSX.Element {
   const { id } = useParams<{ id: string }>();
@@ -46,6 +47,7 @@ function MovieDetails(): JSX.Element {
           <AvailableStreamingSection streaming={movie.buyProvider} />
         </div>
       </main>
+
       <footer className={styles.footer}>
         <BottomElement />
       </footer>

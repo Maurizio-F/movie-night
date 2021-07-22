@@ -195,12 +195,12 @@ export type MovieResult = {
     character: string;
   }[];
   buyProvider: {
-    id: number;
     streamingPath: string;
+    id: number;
   }[];
   rentProvider: {
-    id: number;
     streamingPath: string;
+    id: number;
   }[];
   video: string[];
 };

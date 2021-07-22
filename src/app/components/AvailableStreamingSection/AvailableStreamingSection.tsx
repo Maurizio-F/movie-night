@@ -11,6 +11,10 @@ type AvailableProps = {
 };
 
 function AvailableStreamingSection({ streaming }: AvailableProps): JSX.Element {
+  if (!streaming) {
+    return <div></div>;
+  }
+
   return (
     <div className={styles.streamingSection__image}>
       {streaming.map((streaming) => (

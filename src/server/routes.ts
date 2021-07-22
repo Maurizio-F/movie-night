@@ -9,7 +9,7 @@ function generateRandomMovieId(min: number, max: number): number {
 router.get("/movies/random", async (_req, res) => {
   let movie;
   while (!movie) {
-    const id = generateRandomMovieId(10000, 500000);
+    const id = generateRandomMovieId(1, 100000);
     try {
       movie = await getMovie(id.toString());
     } catch (error) {
