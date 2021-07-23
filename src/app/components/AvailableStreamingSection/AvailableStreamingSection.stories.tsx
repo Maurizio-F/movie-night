@@ -19,5 +19,5 @@ const streaming = [
 ];
 
 export const StreamingSection = (): JSX.Element => (
-  <AvailableStreamingSection availableStreaming={streaming} />
+  <AvailableStreamingSection streaming={streaming} />
 );

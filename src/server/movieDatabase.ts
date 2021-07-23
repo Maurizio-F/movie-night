@@ -18,9 +18,34 @@ export async function fetchMovieApi(id: string): Promise<FetchResult> {
   return result;
 }
 
+export async function fetchCreditsApi(id: string): Promise<FetchCreditsResult> {
+  const response = await fetch(
+    `https://api.themoviedb.org/3/movie/${id}/credits?api_key=${THE_MOVIE_DB_KEY}`
+  );
+  if (!response.ok) {
+    throw new Error("ERROR");
+  }
+  const result = await response.json();
+  return result;
+}
+
+export async function fetchProviderApi(
+  id: string
+): Promise<FetchProviderResult> {
+  const response = await fetch(
+    `https://api.themoviedb.org/3/movie/${id}/watch/providers?api_key=${THE_MOVIE_DB_KEY}`
+  );
+  if (!response.ok) {
+    throw new Error("ERROR");
+  }
+  const result = await response.json();
+  return result;
+}
+
 export async function getMovie(id: string): Promise<MovieResult> {
   const fullMovie = await fetchMovieApi(id);
   const fullCast = await fetchCreditsApi(id);
+  const fullProvider = await fetchProviderApi(id);
 
   const movie: MovieResult = {
     genres: fullMovie.genres.map((genre) => genre.name),
@@ -36,19 +61,16 @@ export async function getMovie(id: string): Promise<MovieResult> {
       profilePath: `${IMAGE_BASE_URL}${actor.profile_path}`,
       character: actor.character,
     })),
+    buyProvider: fullProvider.results.DE.buy.map((buy) => ({
+      id: buy.provider_id,
+      streamingPath: `${IMAGE_BASE_URL}${buy.logo_path}`,
+    })),
+    rentProvider: fullProvider.results.DE.rent.map((rent) => ({
+      id: rent.provider_id,
+      streamingPath: `${IMAGE_BASE_URL}${rent.logo_path}`,
+    })),
   };
   return movie;
-}
-
-export async function fetchCreditsApi(id: string): Promise<FetchCreditsResult> {
-  const response = await fetch(
-    `https://api.themoviedb.org/3/movie/${id}/credits?api_key=${THE_MOVIE_DB_KEY}`
-  );
-  if (!response.ok) {
-    throw new Error("ERROR");
-  }
-  const result = await response.json();
-  return result;
 }
 
 type FetchResult = {
@@ -142,6 +164,23 @@ type FetchCreditsResult = {
   }[];
 };
 
+type FetchProviderResult = {
+  id: number;
+  results: {
+    DE: {
+      link: string;
+      buy: {
+        logo_path: string;
+        provider_id: number;
+      }[];
+      rent: {
+        logo_path: string;
+        provider_id: number;
+      }[];
+    };
+  };
+};
+
 export type MovieResult = {
   genres: string[];
   id: number;
@@ -156,4 +195,12 @@ export type MovieResult = {
     character: string;
   }[];
   video: string[];
+  buyProvider: {
+    streamingPath: string;
+    id: number;
+  }[];
+  rentProvider: {
+    streamingPath: string;
+    id: number;
+  }[];
 };
