@@ -194,6 +194,7 @@ export type MovieResult = {
     profilePath: string;
     character: string;
   }[];
+  video: string[];
   buyProvider: {
     streamingPath: string;
     id: number;
@@ -202,5 +203,4 @@ export type MovieResult = {
     streamingPath: string;
     id: number;
   }[];
-  video: string[];
 };
