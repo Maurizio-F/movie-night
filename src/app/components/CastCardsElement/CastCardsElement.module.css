@@ -5,6 +5,7 @@
   height: max-content;
   grid-auto-flow: column;
   overflow: scroll;
+  margin-bottom: 3em;
 }
 
 .castCards::-webkit-scrollbar {
