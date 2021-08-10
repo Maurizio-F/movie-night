@@ -10,7 +10,6 @@ function Homescreen(): JSX.Element {
       <main>
         <img className={styles.logo} src={logo} alt="" />
         <HomescreenLink text="Zufallsgenerator" link={"/zufallsgenerator"} />
-        <HomescreenLink text="Planen" link={"/planen"} />
       </main>
       <div className={styles.bottom}>
         <HomescreenElement />

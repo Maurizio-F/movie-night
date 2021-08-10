@@ -9,7 +9,7 @@ import styles from "./NavBar.module.css";
 function NavBar(): JSX.Element {
   return (
     <div className={styles.navBar}>
-      <NavBarLink icon={<SofaIcon />} link="/uebersicht" />
+      <NavBarLink icon={<SofaIcon />} link="/zufallsgenerator" />
       <NavBarLink icon={<LogoIcon />} link="/" />
       <NavBarLink icon={<DiceIcon />} link="zufallsgenerator" />
     </div>

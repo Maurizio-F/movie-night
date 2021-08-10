@@ -17,7 +17,7 @@
   position: fixed;
   bottom: 0;
   width: 10em;
-  max-height: 10em;
+  max-height: 15em;
 }
 
 @media (max-width: 375px) {
